@@ -1,0 +1,41 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+body {
+    background-color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Altera a cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #1c1c1c;
+}
+
+/* Altera a cor do "puxador" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #7188da;
+}
+
+/* Altera a cor do "puxador" da barra de rolagem quando está em hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .codigo-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .codigo-mobile {
+        display: none;
+    }
+}

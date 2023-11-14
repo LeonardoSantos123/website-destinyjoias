@@ -1,0 +1,100 @@
+@font-face {
+            font-family: 'Galderglynn1884DbRegular';
+            src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/Galderglynn1884DbRegular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'OpenSansSemibold';
+            src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/OpenSansSemibold.otf') format('opentype');
+        }
+
+        .titulo-beneficios {
+            margin: 0;
+            margin-top: 50px;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Galderglynn1884DbRegular', sans-serif;
+        }
+
+        .verde-titulo-beneficios {
+            color: #95d97f;
+        }
+
+        .card-list {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 2rem 0;
+            padding: 0;
+            padding-top: 10px;
+            list-style: none;
+            gap: 1rem;
+        }
+
+        .card-beneficios {
+            width: 320px;
+            height: 200px;
+            margin: 0.5rem;
+            font-size: 1rem;
+            border-radius: 15px;
+            text-decoration: none;
+            overflow: hidden;
+            -webkit-box-shadow: 7px 4px 38px -17px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 7px 4px 38px -17px rgba(0, 0, 0, 0.3);
+            box-shadow: 7px 4px 38px -17px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 1rem;
+            position: relative;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card-content {
+            position: relative;
+        }
+
+        .card-icon-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-icon1 {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+
+        }
+
+        .card-icon2 {
+            width: 55px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .card-icon3 {
+            width: 55px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .card-icon4 {
+            width: 55px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .card-text {
+            margin-top: 10px;
+            font-size: 25px;
+            font-family: 'OpenSansSemibold', sans-serif;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            line-height: 1.3;
+        }
+
+        .card-beneficios:hover {
+            transform: translateY(-0.25rem) scale(1.0125);
+        }

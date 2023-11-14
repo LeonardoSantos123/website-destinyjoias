@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/OpenSansSemibold.otf') format('opentype');
+}
+
+.questoes-container {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 80rem;
+  box-sizing: border-box;
+}
+
+.questoes {
+  margin-top: -20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.questoes .questoes-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.questoes .questoes-item button[aria-expanded=true] {
+  border-bottom: 1px solid #7188da;
+}
+
+.questoes button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #1c1c1c;
+  font-size: 25px;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.questoes button:hover,
+.questoes button:focus {
+  cursor: pointer;
+  color: #7188da;
+}
+
+.questoes button:hover::after,
+.questoes button:focus::after {
+  cursor: pointer;
+  color: #7188da;
+  border: 1px solid #7188da;
+}
+
+.questoes button .questoes-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.questoes button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.questoes button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.questoes button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.questoes button[aria-expanded=true] {
+  color: #7188da;
+}
+
+.questoes button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+.questoes button[aria-expanded=true]+.questoes-conteudo {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.questoes .questoes-conteudo {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.questoes-texto1 {
+  font-family: 'OpenSansSemibold', sans-serif;
+  color: #1c1c1c;
+  font-size: 20px;
+  margin: 2em 0;
+}
+
+@media (max-width: 768px) {
+  .questoes-container {
+    padding: 2rem;
+    width: auto;
+  }
+
+  .questoes-titulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+.questoes-titulo {
+  color: black;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Open Sans Bold', sans-serif;
+}

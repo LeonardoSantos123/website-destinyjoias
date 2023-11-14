@@ -1,0 +1,42 @@
+@font-face {
+      font-family: 'GilroyExtraBold';
+      src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/main/GilroyExtraBold.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'GilroyLight';
+      src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/main/GilroyLight.otf') format('opentype');
+    }
+
+    .retangulo-banner2-desktop {
+        background-color: black;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 50px;
+        flex-direction: column;
+      }
+      
+      .discount-text {
+        position: absolute;
+        text-align: center;
+        color: white;
+        font-size: 55px;
+        font-weight: 300;
+        font-family: 'GilroyLight', sans-serif;
+        top: 30px;
+
+      }
+      
+      .discount-text2 {
+        position: absolute;
+        text-align: center;
+        color: #66FB6D;
+        font-size: 65px;
+        font-family: 'GilroyExtraBold', sans-serif;
+        bottom: 20px; 
+      }
+      

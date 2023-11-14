@@ -42,7 +42,7 @@
       }
 
       .imagem:hover {
-        transform: none; /* Remova o efeito hover no mobile */
+        transform: none;
         box-shadow: none;
       }
 
@@ -53,5 +53,12 @@
 
       .imagem-container {
         margin: 2px; 
+      }
+    }
+
+    @media (max-width: 386px) {
+      .imagem {
+        width: 110px; 
+        height: auto; 
       }
     }

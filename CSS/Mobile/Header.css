@@ -45,8 +45,8 @@ clear: both;
 overflow: hidden;
 padding-top: 15px;
 position: fixed;
-right: 0px;
-top: 13px;
+right: 10px;
+top: 0;
 z-index: 2;
 }
 

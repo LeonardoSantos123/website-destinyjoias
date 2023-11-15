@@ -1,196 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.conteudogeral-header {
-  margin-top: 58px;
-}
-
 .retangulo-header {
-  position: fixed;
   background-color: #1c1c1c;
-  height: 60px; 
-  width: 100%; 
-  top: 0;
-  z-index: 999;
-}
-
-.retangulo-header img {
-  max-width: 160px; 
-  max-height: auto; 
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.retangulo-header img {
-  max-width: 160px; 
-  max-height: auto; 
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.mobile-wrap {
-margin: auto;
-width: 100%;
-height: 100%;
-overflow: hidden;
-}
-
-.mobile {
-z-index: 99;
-color: #fff;
-height: 100%;
-}
-
-.mobile .header {
-clear: both;
-overflow: hidden;
-padding-top: 15px;
-position: absolute;
-right: 10px;
-top: 0;
-z-index: 2;
-}
-
-.mobile .header>span {
-font-size: 24px;
-min-width: 24px
-}
-
-.mobile .header>.title {
-font-size: 16px;
-line-height: 24px;
-margin-left: 15px
-}
-
-.mobile .header .pull-left {
-float: left
-}
-
-.mobile .header .pull-right {
-float: right
-}
-
-.mobile .header .ion-ios-navicon>i {
-height: 1px;
-width: 20px;
-margin-top: 5px;
-background: #fff;
-position: relative;
-display: inline-block
-}
-
-.mobile .header .ion-ios-navicon>i:after,
-.mobile .header .ion-ios-navicon>i:before {
-content: '';
-width: inherit;
-height: inherit;
-position: absolute;
-background: inherit
-}
-
-.mobile .header .ion-ios-navicon>i:before {
-bottom: 12px
-}
-
-.mobile .header .ion-ios-navicon>i:after {
-bottom: 6px
-}
-
-.sidebar .sidebar-content,
-.sidebar .sidebar-overlay {
-top: 0;
-left: 0;
-bottom: 0;
-position: absolute;
-transition: all .3s ease-in-out 0s
-}
-
-.sidebar .sidebar-overlay {
-right: 0;
-opacity: 0;
-width: 100%;
-z-index: 999;
-transform: scale(0);
-background: rgba(0, 0, 0, .4);
-}
-
-.sidebar .blur-background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  backdrop-filter: blur(5px);
-  z-index: 998;
-  display: none; 
-}
-
-.sidebar.active .blur-background {
-  display: block;
-}
-
-.sidebar .sidebar-content {
-  width: 80%;
-  color: #333;
-  padding: 0; 
-  margin: 0;
-  z-index: 9999;
-  background: #1c1c1c;
-  transform: translateX(150%)
-}
-
-.sidebar.active .sidebar-content {
-transform: translateX(0)
-}
-
-.sidebar.active .sidebar-overlay {
-opacity: 1;
-transform: scale(1)
-}
-
-.logo-slidebar-header img {
-  max-width: 180px; 
-  max-height: auto; 
-  margin-left: 10px;
-  padding-top: 20px; 
-  padding-bottom: 20px;
-}
-
-.icon-slidebar-header {
+  height: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 25px;
+  justify-content: space-between;
+  position: fixed; 
+  top: 0; 
+  z-index: 5;
 }
 
-.icon-slidebar-header img {
-  width: 28px;
+.logo-header img {
+  display: block;
   height: auto;
+  width: 180px;
+  margin-left: 5px;
+}
+
+.icon-menu i {
+  color: #ffffff;
+  font-size: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 80%;
+  height: 100%;
+  background-color: #1c1c1c;
+  transition: left 0.3s ease;
+  align-items: center;
+  z-index: 6;
+}
+
+.menu-overlay-logo {
+  display: block;
+  height: auto;
+  width: 200px;
   margin-left: 10px;
+  margin-top: 15px;
 }
 
-.icon-slidebar-header a {
-  color: #fff;
-  font-size: 18px;
-  margin-left: 15px;
-  margin-top: 1px;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-}
-
-.retangulo1-slidebar-header {
+.menu-content {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 20px;
   position: relative;
+}
+
+.menu-rectangle {
   width: 100%;
   height: 50px;
-  background-color: #2a2a2a;
-  display: flex;
-  align-items: center;
+  background-color: #353535;
+  position: absolute;
+  z-index: 3;
 }
 
-.retangulo2-slidebar-header {
-  position: absolute;
+.menu-rectangle2 {
   width: 15px;
   height: 50px;
   background-color: #7188da;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.menu-conteudo {
+  z-index: 4;
+  margin-left: 10px;
   display: flex;
   align-items: center;
-  right: 0px;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.show-menu-overlay {
+  left: 0%; 
+}
+
+.overlay-right {
+  position: fixed;
+  top: 0;
+  left: 100%; /* Alterado para iniciar à direita */
+  width: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: left 0.3s ease, opacity 0.3s ease; /* Adiciona transição para a posição e opacidade */
+  z-index: 6;
+}
+.show-overlay-right {
+  left: 80%; /* Muda para a posição à esquerda quando a classe show-overlay-right é adicionada */
+  opacity: 1;
 }

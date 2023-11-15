@@ -43,9 +43,9 @@ height: 100%;
 clear: both;
 overflow: hidden;
 padding-top: 15px;
-position: absolute;
-right: 10px;
-top: 0;
+position: fixed;
+left: 345px;
+top: 13px;
 z-index: 2;
 }
 

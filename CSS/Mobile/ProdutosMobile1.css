@@ -59,22 +59,22 @@
 
         @media (max-width: 386px) {
             .titulo-produtosmobile1 {
-                font-size: 16px; /* ou qualquer tamanho desejado */
-                padding: 15px; /* ou qualquer valor desejado para o padding */
+                font-size: 18px; 
+                padding: 15px; 
             }
         
             .produtos-produtosmobile1 img {
-                width: 172px; /* ou qualquer largura desejada */
-                height: 172px; /* ou qualquer altura desejada */
+                width: 172px; 
+                height: 172px; 
             }
         
             .produto-nome-produtosmobile1 {
-                font-size: 14px; /* ou qualquer tamanho desejado */
-                margin: 1px; /* ou qualquer valor desejado para a margem */
+                font-size: 17px; 
+                margin: 1px; 
             }
         
             .produto-preco-produtosmobile1 {
-                font-size: 14px; /* ou qualquer tamanho desejado */
-                margin: 1px 0 10px; /* ou qualquer valor desejado para a margem */
+                font-size: 17px; 
+                margin: 1px 0 10px; 
             }
         }

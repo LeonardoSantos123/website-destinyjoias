@@ -5,6 +5,7 @@
 }
 
 .retangulo-header {
+  position: fixed;
   background-color: #1c1c1c;
   height: 60px; 
   width: 100%; 
@@ -44,7 +45,7 @@ clear: both;
 overflow: hidden;
 padding-top: 15px;
 position: fixed;
-left: 345px;
+right: 0px;
 top: 13px;
 z-index: 2;
 }

@@ -63,7 +63,7 @@
 }
 
 .menu-rectangle2 {
-  width: 15px;
+  width: 10px;
   height: 50px;
   background-color: #7188da;
   position: absolute;
@@ -79,13 +79,13 @@
 }
 
 .menu-icon {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .menu-text {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   margin-left: 15px;
   margin-top: 2px;

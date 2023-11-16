@@ -10,7 +10,6 @@
   width: 100%;
   animation: fade 0.5s ease-in-out;
   z-index: 1;
-  margin-top: 50px;
 }
 
 .carousel-inner .item.active {
@@ -53,8 +52,8 @@
 .carousel-indicators .active {
   background-color: #7188da;
   border: none;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .carousel-indicators.mobile li {
@@ -123,6 +122,10 @@
 
   .carousel-indicators.mobile {
     display: block;
+  }
+
+  .carousel-inner .item {
+    margin-top: 50px;
   }
 }
 

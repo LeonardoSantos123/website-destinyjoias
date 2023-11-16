@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-top: 50px;
 }
 
 .carousel-inner .item {
@@ -11,6 +10,7 @@
   width: 100%;
   animation: fade 0.5s ease-in-out;
   z-index: 1;
+  margin-top: 50px;
 }
 
 .carousel-inner .item.active {

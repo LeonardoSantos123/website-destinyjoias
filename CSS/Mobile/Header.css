@@ -98,18 +98,18 @@
 .overlay-right {
   position: fixed;
   top: 0;
-  left: 100%; /* Alterado para iniciar à direita */
+  left: 100%;
   width: 20%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   display: none;
   backdrop-filter: blur(2px);
   opacity: 0;
-  transition: left 0.3s ease, opacity 0.3s ease; /* Adiciona transição para a posição e opacidade */
+  transition: left 0.3s ease, opacity 0.3s ease;
   z-index: 6;
 }
 .show-overlay-right {
-  left: 80%; /* Muda para a posição à esquerda quando a classe show-overlay-right é adicionada */
+  left: 80%; 
   opacity: 1;
 }
 

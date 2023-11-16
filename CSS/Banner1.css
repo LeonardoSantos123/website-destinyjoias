@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .carousel-inner .item {

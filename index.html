@@ -21,6 +21,7 @@
   <!-- Bibliotecas JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -32,9 +33,10 @@
   <!-- Arquivos CSS do Site -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
   <link rel="stylesheet" href="CSS/Componentes.css">
   <link rel="stylesheet" href="CSS/Banner1.css">
   <link rel="stylesheet" href="CSS/Categorias1.css">
@@ -53,6 +55,7 @@
   <link rel="stylesheet" href="CSS/Mobile/BannerMobile2.css">
   <link rel="stylesheet" href="CSS/Mobile/ProdutosMobile2.css">
   <link rel="stylesheet" href="CSS/Mobile/Header.css">
+  <link rel="stylesheet" href="CSS/Mobile/Diamond.css">
 
 </head>
 
@@ -61,45 +64,53 @@
   <!-- Header (Mobile) -->
 
   <div class="codigo-mobile">
-  <div class="retangulo-header">
-    <div class="logo-header">
-        <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoias.png?raw=true">
-    </div>
-    <div class="icon-menu" id="menu-icon">
+    <div class="retangulo-header">
+      <div class="logo-header">
+        <img
+          src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoias.png?raw=true">
+      </div>
+      <div class="icon-menu" id="menu-icon">
         <i class="fas fa-bars"></i>
+      </div>
     </div>
-</div>
 
-<div class="menu-overlay" id="menu-overlay">
-    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoias.png?raw=true" class="menu-overlay-logo">
+    <div class="menu-overlay" id="menu-overlay">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoias.png?raw=true"
+        class="menu-overlay-logo">
 
-    <div class="menu-conteudo-header">
-    <div class="menu-content">
-        <div class="menu-rectangle"></div>
-        <div class="menu-rectangle2"></div>
-        <div class="menu-conteudo">
-            <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_PaginaInicial.png?raw=true" class="menu-icon">
+      <div class="menu-conteudo-header">
+        <div class="menu-content">
+          <div class="menu-rectangle"></div>
+          <div class="menu-rectangle2"></div>
+          <div class="menu-conteudo">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_PaginaInicial.png?raw=true"
+              class="menu-icon">
             <span class="menu-text">Página Inicial</span>
+          </div>
         </div>
-    </div>
 
-    <div class="menu-content">
-        <div class="menu-conteudo">
-            <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Produtos.png?raw=true" class="menu-icon">
+        <div class="menu-content">
+          <div class="menu-conteudo">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Produtos.png?raw=true"
+              class="menu-icon">
             <span class="menu-text">Produtos</span>
+          </div>
         </div>
-    </div>
 
-    <div class="menu-content">
-        <div class="menu-conteudo">
-            <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Diamante.png?raw=true" class="menu-icon">
+        <div class="menu-content">
+          <div class="menu-conteudo">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Diamante.png?raw=true"
+              class="menu-icon">
             <span class="menu-text">Coleção Diamond</span>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
-<div class="overlay-right" id="overlay-right"></div>
-</div>
+    <div class="overlay-right" id="overlay-right"></div>
+  </div>
 
 
   <!-- ___________________________________________________________________________________ -->
@@ -305,21 +316,21 @@
   <!-- Banner de Descontos (Mobile) -->
 
   <div class="codigo-mobile">
-  <div class="container-bannermobile2">
-    <div class="retangulo-bannermobile2">
-      <div class="conteudo-retangulo">
-        <div class="imagem-retangulo-bannermobile2">
-          <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CupomIcon.png?raw=true"
-            alt="Imagem do retângulo">
-        </div>
-        <div class="texto-retangulo-bannermobile2">
-          <p class="texto1-bannermobile2">USE O NOSSO CUPOM</p>
-          <p class="texto2-bannermobile2">DESTINYJOIAS20</p>
+    <div class="container-bannermobile2">
+      <div class="retangulo-bannermobile2">
+        <div class="conteudo-retangulo">
+          <div class="imagem-retangulo-bannermobile2">
+            <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CupomIcon.png?raw=true"
+              alt="Imagem do retângulo">
+          </div>
+          <div class="texto-retangulo-bannermobile2">
+            <p class="texto1-bannermobile2">USE O NOSSO CUPOM</p>
+            <p class="texto2-bannermobile2">DESTINYJOIAS20</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- ___________________________________________________________________________________ -->
@@ -392,6 +403,137 @@
   <!-- ___________________________________________________________________________________ -->
 
 
+  <!-- Coleção Diamond (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="retangulo-curva">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/retangulo-curva.png?raw=true">
+      <div class="color-rectangle">
+          <main>
+              <div>
+                  <div class="conteudo-diamond">
+                <span>NOVIDADES</span>
+                <h1>Coleção Diamond</h1>
+                <hr>
+                <p>Explore a Melhor Coleção de Joias 
+                  Cravejadas do Brasil</p>
+              </div>
+              </div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide--one">
+                    <div>
+                      <h2>Corrente Diamond</h2>
+                      <a href="#" target="_blank">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide--two">
+                    <div>
+                      <h2>Nome do Produto</h2>
+                      <a href="#" target="_blank">Comprar</a>
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--three">
+            
+                    <div>
+                      <h2>Nome do Produto</h2>
+                      <a href="#" target="_blank">Comprar</a>
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--four">
+            
+                    <div>
+                      <h2>Nome do Produto</h2>
+                      <a href="#" target="_blank">Comprar</a>
+                    </div>
+                  </div>
+            
+                  <div class="swiper-slide swiper-slide--five">
+            
+                    <div>
+                      <h2>Nome do Produto</h2>
+                      <a href="#" target="_blank">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </main>
+
+            <div class="texto-geral">
+            <h1>
+              <span class="texto-teste">CONHEÇA A NOSSA</span>
+              <span class="magic">
+                <span class="magic-star">
+                  <svg viewBox="0 0 512 512">
+                  <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                  </svg>
+                </span>
+                <span class="magic-star">
+                  <svg viewBox="0 0 512 512">
+                  <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                  </svg>
+                </span>
+                <span class="magic-star">
+                  <svg viewBox="0 0 512 512">
+                  <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                  </svg>
+                </span>
+                <span class="magic-text">COLEÇÃO</span>
+              </span>
+            </h1>
+          </div>
+          <div class="conteudo-texto">
+              <div class="retangulo3-diamond">
+                  <img class="icone-qualidade" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Qualidade.png?raw=true">
+              </div>
+              <span class="texto-retangulo">QUALIDADE</span>
+          </div>
+          
+          <div class="conteudo-texto">
+              <div class="retangulo3-diamond">
+                  <img class="icone-preco" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Pre%C3%A7o.png?raw=true">
+              </div>
+              <span class="texto-retangulo">PREÇO</span>
+          </div>
+          
+          <div class="conteudo-texto">
+              <div class="retangulo3-diamond">
+                  <img class="icone-garantia" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Garantia.png?raw=true">
+              </div>
+              <span class="texto-retangulo">GARANTIA</span>
+          </div>
+          
+          <div class="conteudo-texto">
+              <div class="retangulo3-diamond">
+                  <img class="icone-frete" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Frete.png?raw=true">
+              </div>
+              <span class="texto-retangulo">FRETE GRÁTIS</span>
+          </div>
+
+          <div class="retangulo4-diamond">
+              <img class="imagem1" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Foto3.png?raw=true">
+              <img class="imagem2" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Foto3.png?raw=true">
+              <div class="produtos">
+              <div class="retangulo5-diamond">
+                      <div class="nomedoproduto-retangulo5">Corrente Diamond</div>
+                      <div class="preçodoproduto-retangulo5">R$70 </div>
+                  </div>
+              <div class="retangulo5-diamond">
+                      <div class="nomedoproduto-retangulo5">Corrente Diamond</div>
+                      <div class="preçodoproduto-retangulo5">R$70 </div>
+          </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
   <!-- Coleção Diamond -->
 
   <div class="codigo-desktop">
@@ -407,22 +549,19 @@
 
         <div class="image-icon1">
           <img class="image-verificado"
-            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627"
-            alt="Imagem 2">
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
           <span class="icones-texto">Preço</span>
         </div>
 
         <div class="image-icon1">
           <img class="image-verificado"
-            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627"
-            alt="Imagem 3">
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
           <span class="icones-texto">Frete Grátis</span>
         </div>
 
         <div class="image-icon1">
           <img class="image-verificado"
-            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627"
-            alt="Imagem 4">
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
           <span class="icones-texto">Garantia</span>
         </div>
         <a href="#" class="btn-garantia">Veja Mais</a>
@@ -828,6 +967,7 @@
 <script src="JS/Ajuda1.js"></script>
 <script src="JS/Questoes1.js"></script>
 <script src="JS/Header.js"></script>
+<script src="JS/Diamond.js"></script>
 
 </body>
 

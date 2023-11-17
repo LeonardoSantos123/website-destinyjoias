@@ -351,7 +351,7 @@ main a {
 }
 
 .retangulo4-diamond {
-    width: 355px;
+    width: 370px;
     height: 150px;
     border-radius: 20px;
     background-color: #161616;
@@ -363,7 +363,7 @@ main a {
 
 .retangulo5-diamond {
     display: inline-block;
-    width: 165px;
+    width: 175px;
     height: 65px;
     border-radius: 10px;
     background-color: #262626;
@@ -394,16 +394,16 @@ main a {
 
 .imagem1 {
     position: absolute;
-    width: 165px !important;
-    margin-top: -92px;
-    margin-left: 9px;
+    width: 175px !important;
+    margin-top: -102px;
+    margin-left: 6px;
     border-radius: 10px;
 }
 
 .imagem2 {
     position: absolute;
-    width: 165px !important;
-    margin-top: -92px;
-    margin-left: 182px;
+    width: 175px !important;
+    margin-top: -102px;
+    margin-left: 189px;
     border-radius: 10px;
 }

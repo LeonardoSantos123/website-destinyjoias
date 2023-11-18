@@ -25,18 +25,18 @@
     }
   }
 
-.retangulo-curva {
+.retangulo1-diamond {
     position: relative;
     width: 100%;
 }
 
-.retangulo-curva img {
+.retangulo1-diamond img {
     width: 100%; 
     height: auto; 
     display: block;
 }
 
-.color-rectangle {
+.retangulo2-diamond {
     position: relative;
     width: 100%;
     height: 1340px;
@@ -232,13 +232,13 @@ main a {
     }
   }
 
-  .texto-geral {
+  .texto-geral-diamond {
     margin-top: 40px;
     margin-left: 15px;
     font-size: 11px;
   }
   
-  .texto-teste {
+  .texto2-diamond {
     color: white;
     margin: 0px;
     text-align: center;
@@ -291,7 +291,7 @@ main a {
     white-space: nowrap;
   }
 
-  .conteudo-texto {
+  .conteudo-texto-diamond {
     display: flex;
     align-items: center; 
     margin-top: 30px;
@@ -315,24 +315,24 @@ main a {
     padding: 10px;
 }
 
-.icone-qualidade {
+.icone-qualidade-diamond {
     height: 32px !important;
 }
 
-.icone-preco {
+.icone-preco-diamond {
     height: 32px !important;
 }
 
-.icone-garantia {
+.icone-garantia-diamond {
     height: 35px !important;
 }
 
-.icone-frete {
+.icone-frete-diamond {
     height: 38px !important;
 }
 
 
-.texto-retangulo {
+.texto-retangulo-diamond {
     margin: 0; 
     font-size: 20px;
     letter-spacing: 1.10px;
@@ -341,7 +341,7 @@ main a {
     font-weight: 300;
 }
 
-.produtos {
+.produtos-diamond {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -392,7 +392,7 @@ main a {
     margin-left: 10px;
 }
 
-.imagem1 {
+.imagem1-diamond {
     position: absolute;
     width: 175px !important;
     margin-top: -102px;
@@ -400,7 +400,7 @@ main a {
     border-radius: 10px;
 }
 
-.imagem2 {
+.imagem2-diamond {
     position: absolute;
     width: 175px !important;
     margin-top: -102px;
@@ -414,7 +414,7 @@ main a {
     width: 375px;
 }
 
-.imagem2 {
+.imagem2-diamond {
   margin-left: 192px;
 }
 
@@ -426,11 +426,11 @@ main a {
     width: 382px;
 }
 
-.imagem1 {
+.imagem1-diamond {
   margin-left: 12px;
 }
 
-.imagem2 {
+.imagem2-diamond {
   margin-left: 195px !important;
 }
 

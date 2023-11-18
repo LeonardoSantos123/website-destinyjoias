@@ -1,0 +1,84 @@
+.container-banner-beneficios {
+    margin: 0;
+    padding: 10px;
+}
+
+.retangulo-banner-beneficios {
+    display: flex;
+    background-color: #72db7d;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-retangulo-banner-beneficios {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.imagem-retangulo-banner-beneficios img {
+    max-width: 50px;
+    margin-top: 5px;
+}
+
+.texto-retangulo-banner-beneficios {
+    margin-left: 15px;
+}
+
+.texto1-banner-beneficios {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #1c1c1c;
+}
+
+.texto2-banner-beneficios {
+    margin: 0;
+    margin-top: 0px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.container-beneficios {
+    margin-top: -5px;
+}
+
+.imagem-beneficios {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.background-beneficios {
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icone-beneficios {
+    position: absolute;
+    margin-top: 8px;
+    left: 8%;
+    height: 52px;
+}
+
+.texto-beneficios {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: -60px;
+    left: 30%;
+}
+
+.conteudo-beneficios {
+    margin-top: 80px;
+}

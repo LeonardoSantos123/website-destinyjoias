@@ -407,3 +407,31 @@ main a {
     margin-left: 189px;
     border-radius: 10px;
 }
+
+@media screen and (min-width: 390px) {
+
+  .retangulo4-diamond {
+    width: 375px;
+}
+
+.imagem2 {
+  margin-left: 192px;
+}
+
+}
+
+@media screen and (min-width: 400px) {
+
+  .retangulo4-diamond {
+    width: 382px;
+}
+
+.imagem1 {
+  margin-left: 12px;
+}
+
+.imagem2 {
+  margin-left: 195px !important;
+}
+
+}

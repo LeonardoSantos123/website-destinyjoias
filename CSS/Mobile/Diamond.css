@@ -51,7 +51,7 @@ main {
   position: relative;
   margin: 0 auto;
   padding-top: 20px;
-  width: calc(min(90rem, 95%));
+  width: calc(min(90rem, 92%));
 }
 
 main > div span {

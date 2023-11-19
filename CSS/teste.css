@@ -51,8 +51,8 @@
     opacity: 0;
     -webkit-animation: fadein-circular 1s ease-in-out forwards;
     animation: fadein-circular 1s ease-in-out forwards;
-    -webkit-animation: fadeout-profile 1.5s ease-in-out forwards;
-    animation: fadeout-profile 1.5s ease-in-out forwards;
+    -webkit-animation: fadeout-profile 2s ease-in-out forwards;
+    animation: fadeout-profile 2s ease-in-out forwards;
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
     transform-origin: center center;

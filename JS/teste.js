@@ -5,5 +5,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function () {
         loader.classList.add('fade-out');
         document.getElementById('wrapper').style.display = 'block';
-    }, 1000); // Tempo ajustado para 2 segundos (você pode ajustar conforme necessário)
+    }, 800); // Tempo ajustado para 2 segundos (você pode ajustar conforme necessário)
 });

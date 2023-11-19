@@ -10,7 +10,6 @@
   margin-top: 80px;
   width: 80rem;
   box-sizing: border-box;
-  margin-top: 350px;
 }
 
 .questoes {
@@ -124,6 +123,7 @@
   .questoes-container {
     padding: 2rem;
     width: auto;
+    margin-top: 350px;
   }
 
   .questoes-titulo {

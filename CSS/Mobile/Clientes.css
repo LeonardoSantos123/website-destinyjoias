@@ -1,0 +1,121 @@
+.container-clientes {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.retangulo1-clientes {
+    width: 320px;
+    height: 40px;
+    background-color: #161616;
+    position: relative;
+    margin: 0 auto;
+}
+
+.texto1-clientes {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.retangulo2-clientes {
+    width: 320px;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+.imagem-clientes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.retangulo3-clientes {
+    width: 320px;
+    height: 108px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.retangulo4-clientes {
+    width: 320px;
+    height: 108px;
+    top: -100px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.texto2-clientes {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: black;
+    left: 5px;
+    margin-top: -2px;
+    z-index: 2;
+}
+
+.texto3-clientes {
+    position: absolute;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    left: 5px;
+    margin-top: 26px;
+    z-index: 2;
+}
+
+.estrelas-container {
+    display: flex;
+}
+
+.imagem-estrela-clientes {
+    width: 20px;
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 5px;
+    z-index: 2;
+}
+
+.container-seta-clientes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+}
+
+.seta2-clientes {
+    transform: scaleX(-1);
+}
+
+.seta-clientes {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.slide-clientes {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Alterado para ease-in-out para uma transição mais suave */
+}
+
+.fade {
+    opacity: 1;
+}

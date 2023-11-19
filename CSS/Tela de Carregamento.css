@@ -3,7 +3,7 @@
     --loader-stroke-color: #7188da;
 }
 
-#wrapper {
+.loading-page {
     position: relative;
     height: 100%;
     display: none;
@@ -22,16 +22,6 @@
 .profile-main-loader.fade-out {
     -webkit-animation: fadeout-profile 1s ease-in-out forwards;
     animation: fadeout-profile 1s ease-in-out forwards;
-}
-
-@keyframes fadeout-profile {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        display: none;
-    }
 }
 
 .profile-main-loader .loader {
@@ -65,6 +55,14 @@
     margin-left: -75px;
 }
 
+.loader-path {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
 @keyframes fadein-circular {
     from {
         opacity: 0;
@@ -74,12 +72,14 @@
     }
 }
 
-.loader-path {
-    stroke-dasharray: 150, 200;
-    stroke-dashoffset: -10;
-    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round;
+@keyframes fadeout-profile {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
 }
 
 @-webkit-keyframes rotate {

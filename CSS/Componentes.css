@@ -1,13 +1,10 @@
 * {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    user-select: none;
-    pointer-events: none;
 }
 
 body {
     background-color: #f5f5f7;
-    height: 100%;
     margin: 0;
     padding: 0;
 }

@@ -17,6 +17,15 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.questoes-titulo {
+  color: black;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
 .questoes .questoes-item {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -123,19 +132,15 @@
   .questoes-container {
     padding: 2rem;
     width: auto;
+    margin-top: 0px;
   }
 
   .questoes-titulo {
-    font-size: 36px;
+    font-size: 40px !important;
     margin-bottom: 20px;
   }
-}
 
-.questoes-titulo {
-  color: black;
-  font-size: 60px;
-  font-weight: 600;
-  margin-bottom: 50px;
-  text-align: center;
-  font-family: 'Open Sans Bold', sans-serif;
+  .questoes button {
+    font-size: 20px;
+  }
 }

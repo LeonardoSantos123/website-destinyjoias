@@ -54,6 +54,12 @@
   position: relative;
 }
 
+.menu-content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .menu-rectangle {
   width: 100%;
   height: 50px;

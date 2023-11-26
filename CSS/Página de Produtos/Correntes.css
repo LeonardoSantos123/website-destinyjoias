@@ -903,7 +903,7 @@
   }
 
   .cart-title {
-    margin-top: 10rem !important;
+    margin-top: 9rem !important;
     margin-bottom: 2rem !important;
   }
 
@@ -1055,13 +1055,12 @@
 
   .cart-rectangle {
     width: 320px !important;
-    height: 160px !important;
   }
 
   .logo-cart {
     width: 245px !important;
     height: 53px !important;
-    top: 70px !important;
+    top: 50px !important;
     margin-left: 38px !important;
   }
 

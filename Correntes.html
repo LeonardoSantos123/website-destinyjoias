@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulseiras | Destiny Joias</title>
+
+  <!-- Ícone do Website da Destiny Joias -->
+  <link rel="icon"
+    href="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/%C3%8Dcone%20do%20Site/Icon_DestinyJoias.png?raw=true"
+    type="image/png">
+  <link rel="shortcut icon"
+    href="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/%C3%8Dcone%20do%20Site/Icon_DestinyJoias.png?raw=true"
+    type="image/png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage"
+    content="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/%C3%8Dcone%20do%20Site/Icon_DestinyJoias.png?raw=true">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/Tela de Carregamento.css">
+  <link rel="stylesheet" href="CSS/Componentes.css">
+  <link rel="stylesheet" href="CSS/Mobile/Header.css">
+  <link rel="stylesheet" href="CSS/Header Desktop.css">
+  <link rel="stylesheet" href="CSS/Página de Produtos/Correntes.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Arquivos CSS do Site (Mobile) -->
+  <link rel="stylesheet" href="CSS/Mobile/Header.css">
+
+  <!-- Biblioteca JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Tela de Carregamento -->
+  
+  <div class="profile-main-loader">
+    <div class="loader">
+      <svg class="circular-loader" viewBox="25 25 50 50" >
+        <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#ffffff" stroke-width="2" />
+      </svg>
+    </div>
+  </div>
+  <div id="loading-page">
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Carrinho de Produtos -->
+
+  <div id="cart-icon">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconCarrinho.png?raw=true" class="carrinho1">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconCarrinho2.png?raw=true" class="carrinho2">
+  </div>
+  <div class="cart">
+    <div class="cart-rectangle">
+      <img class="logo-cart" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/LogoDestinyJoias.png?raw=true">
+    </div>
+    <h2 class="cart-title">Seu Carrinho</h2>
+    <div class="cart-content">
+    </div>
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price" id="total-price">$0</div>
+    </div>
+    <button type="button" class="btn-buy">Realizar a Compra</button>
+    <i class='bx bx-x' id="close-cart"></i>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Header (Desktop) -->
+
+  <div class="codigo-desktop">
+    <div class="retangulo1-header-desktop">
+      <a href="https://leonardosantos123.github.io/website-destinyjoias/"><img class="logo-desktop"
+          src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoiasDesktop.png?raw=true"></a>
+    </div>
+    <header id="header-desktop">
+      <nav class="nav">
+        <button class="toggle-menu">
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div id="menu-desktop" class="">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">
+              Página Inicial
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Produtos
+            </a>
+          </li>
+
+          <li>
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html">
+              Nossa Equipe
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="menu-footer">
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Header (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="retangulo-header">
+      <div class="logo-header">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoiasMobile.png?raw=true">
+        </a>
+      </div>
+      <div class="icon-menu" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="menu-overlay" id="menu-overlay">
+      <a href="https://leonardosantos123.github.io/website-destinyjoias/">
+        <img
+          src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/LogoDestinyJoiasMobile.png?raw=truee"
+          class="menu-overlay-logo"></a>
+
+      <div class="menu-conteudo-header">
+        <div class="menu-content">
+          <div class="menu-rectangle"></div>
+          <div class="menu-rectangle2"></div>
+          <div class="menu-conteudo">
+            <a href="#">
+              <img
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_PaginaInicial.png?raw=true"
+                class="menu-icon">
+              <span class="menu-text">Página Inicial</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <div class="menu-conteudo">
+            <a href="#">
+              <img
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Produtos.png?raw=true"
+                class="menu-icon">
+              <span class="menu-text">Produtos</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <div class="menu-conteudo">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html">
+              <img
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true"
+                class="menu-icon">
+              <span class="menu-text">Nossa Equipe</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-right" id="overlay-right"></div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Notificações -->
+
+  <div class="notification">
+    <div class="rectangle">
+      <div class="rectanglefundo">
+        <img src="">
+      </div>
+      <div class="notification-text">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Primeira Lista de Produtos -->
+  
+  <div class="container-produtos">
+  <h1 class="primeiro-texto">
+    <span class="black-text">CORRENTES</span>
+    <span class="blue-text">MAIS VENDIDAS</span>
+  </h1>
+
+  <div class="product-images">
+    <div class="image-container">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto1.jpg?raw=true"
+      class="product-img">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto2.jpg?raw=true" class="placeholder-image">
+      <div class="container2" id="container2">
+        <p class="product-title">Corrente Cuban</p>
+        <p class="price">R$ 100,00</p>
+        <button class="add-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="image-container">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto1.png?raw=true" class="product-img">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto2.png?raw=true" class="placeholder-image">
+      <div class="container2" id="container2">
+        <p class="product-title">Corrente Thorn</p>
+        <p class="price">R$ 150,00</p>
+        <button class="add-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div class="image-container">
+        <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto1.jpg?raw=true" class="product-img">
+        <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto2.jpg?raw=true" class="placeholder-image">
+        <div class="container2" id="container2">
+          <p class="product-title">Corrente 12mm</p>
+          <p class="price">R$ 120,00</p>
+          <button class="add-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="image-container">
+        <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto1.jpg?raw=true" class="product-img">
+        <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto2.jpg?raw=true" class="placeholder-image">
+        <div class="container2" id="container2">
+          <p class="product-title">Corrente Colar</p>
+          <p class="price">R$ 50,00</p>
+          <button class="add-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="overlay"></div>
+    </div>
+  </div>
+
+<!-- Segunda Lista de Produtos -->
+
+<div class="product-images">
+  <div class="image-container">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto1.jpg?raw=true"
+    class="product-img">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto2.jpg?raw=true" class="placeholder-image">
+    <div class="container2" id="container2">
+      <p class="product-title">Corrente Cuban</p>
+      <p class="price">R$ 100,00</p>
+      <button class="add-cart">Adicionar ao Carrinho</button>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <div class="image-container">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto1.png?raw=true" class="product-img">
+    <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto2.png?raw=true" class="placeholder-image">
+    <div class="container2" id="container2">
+      <p class="product-title">Corrente Thorn</p>
+      <p class="price">R$ 150,00</p>
+      <button class="add-cart">Adicionar ao Carrinho</button>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <div class="image-container">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto1.jpg?raw=true" class="product-img">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto2.jpg?raw=true" class="placeholder-image">
+      <div class="container2" id="container2">
+        <p class="product-title">Corrente 12mm</p>
+        <p class="price">R$ 120,00</p>
+        <button class="add-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="overlay"></div>
+  </div>
+  <div class="image-container">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto1.jpg?raw=true" class="product-img">
+      <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto2.jpg?raw=true" class="placeholder-image">
+      <div class="container2" id="container2">
+        <p class="product-title">Corrente Colar</p>
+        <p class="price">R$ 50,00</p>
+        <button class="add-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="overlay"></div>
+  </div>
+</div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Teste -->
+
+
+
+
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Arquivo JavaScript do Site -->
+
+  <script src="JS/Tela de Carregamento.js"></script>
+  <script src="JS/Página de Produtos/Correntes.js"></script>
+  <script src="JS/Header.js"></script>
+  <script src="JS/Header Desktop.js"></script>
+
+</body>
+
+</html>

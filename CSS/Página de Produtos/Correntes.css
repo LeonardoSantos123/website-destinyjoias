@@ -249,6 +249,10 @@
   transform: rotate3d(0, 0, 1, 45deg);
 }
 
+button:focus {
+  outline: none;
+}
+
 /* ___________________________________________________________________________________ */
 
 /* Header Mobile */
@@ -398,7 +402,7 @@
   display: inline-flex;
   position: relative;
   margin-left: 0px;
-  top: 30px;
+  top: 50px;
   padding: 0 16px;
   width: 0;
   height: 60px;
@@ -704,14 +708,17 @@
   text-align: center;
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 40px;
+  padding-bottom: 30px;
 }
 
 .segundo-texto {
   text-align: center;
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   padding-bottom: 30px;
 }
 
@@ -840,7 +847,7 @@
 
 /* ___________________________________________________________________________________ */
 
-/* Site Responsivo */
+/* Responsividade do Código dos Produtos e Header */
 
 @media (max-width: 768px) {
 
@@ -863,6 +870,7 @@
 
   .container-produtos {
     position: absolute;
+    width: 100%;
   }
 
   .primeiro-texto {
@@ -1098,3 +1106,320 @@
     width: 280px;
   }
 }
+
+/* ___________________________________________________________________________________ */
+
+/* Opinião dos Clientes */
+
+.retangulo-curva img {
+  width: 100%;
+  height: 200px;
+}
+
+.retangulo-opiniao {
+  width: 100%;
+  height: 850px;
+  background-color: #161616;
+}
+
+.opiniao-clientes h1 {
+  margin: 0;
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    background-color: #005baa;
+    background-image: linear-gradient(45deg, #5bb3ff, #0078e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+.opiniao-clientes hr {
+  display: block;
+    background: #5bb3ff;
+    height: 5px;
+    width: 100px;
+    border: none;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+.opiniao-clientes p {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.opiniao-clientes img {
+  max-width: 100%;
+  border: 0px;
+}
+
+.opiniao-clientes {
+  padding: 60px 50px;
+}
+
+.opiniao-clientes .item {
+  margin: 0 15px 60px;
+  margin-left: 6px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.opiniao-clientes .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.opiniao-clientes .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.opiniao-clientes .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.opiniao-clientes .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+
+.opiniao-clientes .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+
+.opiniao-clientes .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.opiniao-clientes .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+
+.opiniao-clientes .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #7188da;
+}
+
+.opiniao-clientes .owl-theme .owl-dots .owl-dot span {
+  background: #444444;
+}
+
+/* Responsividade do Código das Opiniões dos Clientes */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .opiniao-clientes {
+    padding: 50px 30px;
+  }
+
+  .opiniao-clientes .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+
+  .opiniao-clientes .item.active {
+    width: 400px;
+  }
+
+  .opiniao-clientes .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .opiniao-clientes {
+    padding: 50px 30px 40px;
+  }
+  .opiniao-clientes .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .opiniao-clientes .item.active {
+    width: 360px;
+  }
+  .opiniao-clientes .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 999px) {
+  .retangulo-curva {
+    display: none;
+  }
+
+  .retangulo-curva2 {
+    display: block;
+  }
+
+  .retangulo-curva2 img {
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .retangulo-curva {
+    display: block;
+  }
+
+  .retangulo-curva2 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .retangulo-opiniao {
+    height: 750px !important;
+  }
+
+  .opiniao-clientes {
+    padding: 2px 15px 20px;
+  }
+  
+  .opiniao-clientes .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+    margin-left: 8px;
+  }
+
+  .opiniao-clientes .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .opiniao-clientes p {
+    font-size: 1.10rem !important;
+    margin-top: 20px !important;
+}
+
+  .opiniao-clientes h3 {
+    font-size: 1.35rem !important;
+}
+}
+
+/* ___________________________________________________________________________________ */
+
+/* Banner de Descontos */
+
+.container-banner-beneficios {
+  margin: 0;
+  padding: 10px;
+}
+
+.retangulo-banner-beneficios {
+  display: flex;
+  background-color: #161616;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 69rem;
+  margin: 0 auto;
+}
+
+.conteudo-retangulo-banner-beneficios {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+}
+
+.imagem-retangulo-banner-beneficios img {
+  max-width: 65px;
+  margin-top: -5px;
+}
+
+.texto-retangulo-banner-beneficios {
+  margin-left: 15px;
+}
+
+.texto1-banner-beneficios {
+  margin: 0;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.texto2-banner-beneficios {
+  margin: 0;
+  margin-top: -6px;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: #7188da;
+}
+
+/* Responsividade do Código do Banner de Descontos */
+
+@media (max-width: 767px) {
+
+.retangulo-banner-beneficios {
+  width: 100%;
+}
+
+.imagem-retangulo-banner-beneficios img {
+  max-width: 55px;
+  margin-top: 0px;
+}
+
+.texto1-banner-beneficios {
+  font-size: 20px;
+}
+
+.texto2-banner-beneficios {
+  font-size: 20px;
+}
+}
+

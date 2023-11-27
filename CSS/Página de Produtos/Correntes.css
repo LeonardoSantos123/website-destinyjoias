@@ -1330,7 +1330,7 @@ button:focus {
     margin: 0 10px 40px;
     width: 200px;
     height: 280px;
-    margin-left: 8px;
+    left: 65px;
   }
 
   .opiniao-clientes .item.active {

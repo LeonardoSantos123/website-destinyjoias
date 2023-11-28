@@ -1319,7 +1319,9 @@ button:focus {
 @media (max-width: 767px) {
 
   .retangulo-opiniao {
+    position: absolute;
     height: 750px !important;
+    margin-top: -2px;
   }
 
   .opiniao-clientes {
@@ -1330,7 +1332,7 @@ button:focus {
     margin: 0 10px 40px;
     width: 200px;
     height: 280px;
-    left: 65px;
+    left: 40px;
   }
 
   .opiniao-clientes .item.active {

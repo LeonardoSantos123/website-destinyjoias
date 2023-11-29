@@ -67,11 +67,9 @@
 
 .header-mobile .burger-container #burger {
 	 width: 18px;
-	 height: 8px;
 	 position: relative;
 	 display: block;
 	 margin: -4px auto 0;
-	 top: 50%;
 }
 
 .header-mobile .burger-container #burger .bar {
@@ -203,7 +201,7 @@
 }
 
 .header-mobile.menu-opened .burger-container #burger .bar.btm2Bar {
-  transform: translateY(3px) rotate(-45deg);
+  transform: translateY(2px) rotate(-45deg);
   display: none;
 }
 

@@ -196,6 +196,24 @@ function updatetotal() {
 /* Notificação de Adicionar o Produto ao Carrinho */
 
 let notificationCounter = 0;
+let images = {};
+
+function preloadImages() {
+    const imageUrls = [
+        "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconCarrinho.png?raw=true",
+        "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconComprar.png?raw=true",
+        "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconRemoverCarrinho.png?raw=true",
+        "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconAlert.png?raw=true"
+    ];
+
+    imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+        images[url] = img;
+    });
+}
+
+preloadImages();
 
 function showNotification(productName) {
     var notification = document.querySelector(".notification");
@@ -252,7 +270,7 @@ function showPurchaseNotification() {
     rectanglefundoImage.src = "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconComprar.png?raw=true";
 
     if (window.innerWidth < 600) {
-        rectanglefundoImage.style.marginLeft = "14px";
+        rectanglefundoImage.style.marginLeft = "17px";
     } else {
         rectanglefundoImage.style.marginLeft = "10px";
 
@@ -287,7 +305,7 @@ function showEmptyCartNotification() {
     rectanglefundoImage.src = "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconRemoverCarrinho.png?raw=true";
 
     if (window.innerWidth < 600) {
-        rectanglefundoImage.style.marginLeft = "17px";
+        rectanglefundoImage.style.marginLeft = "18px";
         rectanglefundoImage.style.marginBottom = "3px";
     } else {
         rectanglefundoImage.style.marginLeft = "10px";
@@ -370,7 +388,7 @@ function showRemoveNotification(productName, newImageSrc) {
     rectanglefundoImage.src = "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconRemoverCarrinho.png?raw=true";
 
     if (window.innerWidth < 600) {
-        rectanglefundoImage.style.marginLeft = "17px";
+        rectanglefundoImage.style.marginLeft = "18px";
         rectanglefundoImage.style.marginBottom = "3px";
     } else {
         rectanglefundoImage.style.marginLeft = "10px";

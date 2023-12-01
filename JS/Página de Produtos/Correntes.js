@@ -456,7 +456,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             addCartButton.addEventListener("click", function (event) {
                 event.stopPropagation();
-                console.log("Botão Adicionar ao Carrinho clicado!");
             });
         }
     });

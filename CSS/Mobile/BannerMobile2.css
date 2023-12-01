@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Gilroy Light';
-    src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/GilroyLight.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Open Sans BOld';
-    src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/OpenSansSemiBold.otf') format('opentype');
-}
-
 .container-bannermobile2 {
     padding: 10px;
 }
@@ -40,7 +30,7 @@
     margin: 0;
     margin-top: 8px;
     font-size: 20px;
-    font-family: 'Gilroy Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -48,7 +38,7 @@
     margin: 0;
     margin-top: 2px;
     font-size: 20px;
-    font-family: 'Open Sans Bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #7088da;
 }

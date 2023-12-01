@@ -55,17 +55,44 @@ function buyButtonClicked() {
     var cartContent = document.getElementsByClassName("cart-content")[0];
 
     if (cartContent.children.length > 0) {
-        showPurchaseNotification();
+        // Armazenar temporariamente os produtos a serem removidos
+        const productsToRemove = [];
 
         while (cartContent.hasChildNodes()) {
-            cartContent.removeChild(cartContent.firstChild);
+            const cartItem = cartContent.firstChild;
+            const productName = cartItem.querySelector(".cart-product-title").innerText;
+            productsToRemove.push(productName);
+            cartContent.removeChild(cartItem);
         }
 
+        // Remover produtos do LocalStorage imediatamente
+        productsToRemove.forEach(productName => {
+            removeProductFromLocalStorage(productName);
+        });
+
         updatetotal();
+
+        showPurchaseNotification();
     } else {
         showEmptyCartNotification();
     }
 }
+
+function removeProductsFromLocalStorageOnPageLoad() {
+    const productsToRemoveJSON = sessionStorage.getItem('productsToRemove');
+    if (productsToRemoveJSON) {
+        const productsToRemove = JSON.parse(productsToRemoveJSON);
+        productsToRemove.forEach(productName => {
+            removeProductFromLocalStorage(productName);
+        });
+        sessionStorage.removeItem('productsToRemove');
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    removeProductsFromLocalStorageOnPageLoad();
+});
+
 
 // Remover Produtos do Carrinho
 
@@ -79,7 +106,6 @@ function removeCartItem(event) {
 
     updatetotal();
 
-    // Remover o produto do LocalStorage
     removeProductFromLocalStorage(productName);
 
     showRemoveNotification(productName);

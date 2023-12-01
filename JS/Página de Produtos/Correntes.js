@@ -1,31 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const containers = document.querySelectorAll(".image-container");
-
-    containers.forEach(function (container) {
-        const container2 = container.querySelector(".container2");
-        const addCartButton = container2.querySelector(".add-cart");
-
-        if (container2 && addCartButton) {
-            container.addEventListener("mouseenter", function () {
-                container2.style.height = "200px";
-                addCartButton.style.opacity = "1";
-            });
-
-            container.addEventListener("mouseleave", function (e) {
-                if (!container2.contains(e.relatedTarget)) {
-                    container2.style.height = "160px";
-                    addCartButton.style.opacity = "0";
-                }
-            });
-
-            addCartButton.addEventListener("click", function (event) {
-                event.stopPropagation();
-                console.log("Botão Adicionar ao Carrinho clicado!");
-            });
-        }
-    });
-});
-
 let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let cartRectangle = document.querySelector(".cart-rectangle");
@@ -351,7 +323,7 @@ function produtoExistenteCarrinho(productName) {
 
     rectanglefundo.style.background = "#f2d654";
 
-    rectanglefundoImage.src = "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconAlert.png?raw=true"; 
+    rectanglefundoImage.src = "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconAlert.png?raw=true";
 
     if (window.innerWidth < 600) {
         rectanglefundoImage.style.marginLeft = "17px";
@@ -416,7 +388,7 @@ function showRemoveNotification(productName, newImageSrc) {
 
                 notification.classList.remove("fadeInWidth");
 
-                rectanglefundo.style.background = ""; 
+                rectanglefundo.style.background = "";
             }, 500);
         }
     }, 3000);
@@ -429,10 +401,74 @@ function showRemoveNotification(productName, newImageSrc) {
 $(".custom-carousel").owlCarousel({
     autoWidth: true,
     loop: true
-  });
-  $(document).ready(function () {
+});
+$(document).ready(function () {
     $(".custom-carousel .item").click(function () {
-      $(".custom-carousel .item").not($(this)).removeClass("active");
-      $(this).toggleClass("active");
+        $(".custom-carousel .item").not($(this)).removeClass("active");
+        $(this).toggleClass("active");
     });
-  });
+});
+
+/* ___________________________________________________________________________________ */
+
+/* JavaScript dos Produtos */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll(".image-container");
+
+    containers.forEach(function (container) {
+        const addCartButton = container.querySelector(".add-cart");
+
+        if (addCartButton) {
+            const isMobile = window.matchMedia("(max-width: 750px)").matches;
+
+            if (isMobile) {
+                container.addEventListener("touchstart", function () {
+                    container.querySelector(".container2").style.height = "200px";
+                    addCartButton.style.opacity = "1";
+                });
+
+                container.addEventListener("touchend", function () {
+                    addCartButton.style.opacity = "0";
+                });
+            } else {
+                container.addEventListener("mouseenter", function () {
+                    container.querySelector(".container2").style.height = "200px";
+                    addCartButton.style.opacity = "1";
+                });
+
+                container.addEventListener("mouseleave", function (e) {
+                    const container2 = container.querySelector(".container2");
+                    if (container2 && !container2.contains(e.relatedTarget)) {
+                        container2.style.height = "160px";
+                        addCartButton.style.opacity = "0";
+                    }
+                });
+
+                container.addEventListener("mouseenter", function () {
+                    addCartButton.style.opacity = "1";
+                });
+
+                container.addEventListener("mouseleave", function () {
+                    addCartButton.style.opacity = "0";
+                });
+            }
+
+            addCartButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                console.log("Botão Adicionar ao Carrinho clicado!");
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.add-cart').forEach(button => button.addEventListener('click', e => {
+    if (!button.classList.contains('loading')) {
+
+        button.classList.add('loading');
+
+        setTimeout(() => button.classList.remove('loading'), 3700);
+
+    }
+    e.preventDefault();
+}));

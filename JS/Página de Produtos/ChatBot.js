@@ -9,10 +9,6 @@ $(function () {
             return false;
         }
 
-        var initialBotMessage = "Olá! Como posso ajudar?";
-        generate_message(initialBotMessage, 'user', 'https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Avatar2.png?raw=true');
-
-
         var botResponse = getBotResponse(userMsg);
         generate_message(userMsg, 'self', 'https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Avatar.png?raw=true');
         setTimeout(function () {
@@ -72,4 +68,7 @@ $(function () {
         $("#chat-circle").toggle('scale');
         $(".chat-box").toggle('scale');
     });
+
+    var initialBotMessage = "Olá! Como posso ajudar?";
+    generate_message(initialBotMessage, 'user', 'https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Avatar2.png?raw=true');
 });

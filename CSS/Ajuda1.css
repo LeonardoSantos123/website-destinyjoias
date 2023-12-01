@@ -1,125 +1,117 @@
-@font-face {
-      font-family: 'GilroyExtraBold';
-      src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/GilroyExtraBold.otf') format('opentype');
-    }
+.retangulo-ajuda1-desktop {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  height: 620px;
+  margin-top: 80px;
+}
 
-    @font-face {
-      font-family: 'GilroyLight';
-      src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/GilroyLight.otf') format('opentype');
-    }
+.texto1-ajuda1 {
+  font-size: 60px;
+  padding-top: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
 
-    .retangulo-ajuda1-desktop {
-      background-color: #1c1c1c;
-      color: white;
-      text-align: center;
-      height: 620px;
-      margin-top: 80px;
-    }
+.texto2-ajuda1 {
+  font-size: 30px;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
-    .texto1-ajuda1 {
-      font-size: 60px;
-      padding-top: 80px;
-      font-family: 'GilroyExtraBold', sans-serif;
-    }
+.blue-text {
+  color: #7188da;
+}
 
-    .texto2-ajuda1 {
-      font-size: 30px;
-      padding-top: 20px;
-      font-family: 'GilroyLight', sans-serif;
-    }
+/* Cards */
 
-    .blue-text {
-      color: #7188da;
-    }
+:root {
+  --card-color: rgb(32, 32, 32);
+}
 
-    /* Cards */
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 916px;
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
 
-    :root {
-      --card-color: rgb(32, 32, 32);
-    }
+#cards:hover>.card::after {
+  opacity: 1;
+}
 
-    #cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      max-width: 916px;
-      width: calc(100% - 20px);
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px;
-    }
+.card {
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+}
 
-    #cards:hover>.card::after {
-      opacity: 1;
-    }
+.card:hover::before {
+  opacity: 1;
+}
 
-    .card {
-      border-radius: 10px;
-      cursor: pointer;
-      display: flex;
-      height: 260px;
-      flex-direction: column;
-      position: relative;
-      width: 300px;
-    }
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
 
-    .card:hover::before {
-      opacity: 1;
-    }
+.card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.06),
+      transparent 40%);
+  z-index: 3;
+}
 
-    .card::before,
-    .card::after {
-      border-radius: inherit;
-      content: "";
-      height: 100%;
-      left: 0px;
-      opacity: 0;
-      position: absolute;
-      top: 0px;
-      transition: opacity 500ms;
-      width: 100%;
-    }
+.card::after {
+  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.4),
+      transparent 40%);
+  z-index: 1;
+}
 
-    .card::before {
-      background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-          rgba(255, 255, 255, 0.06),
-          transparent 40%);
-      z-index: 3;
-    }
+.card>.card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
 
-    .card::after {
-      background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
-          rgba(255, 255, 255, 0.4),
-          transparent 40%);
-      z-index: 1;
-    }
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  margin-top: 40px;
+  justify-content: center;
+  overflow: hidden;
+}
 
-    .card>.card-content {
-      background-color: var(--card-color);
-      border-radius: inherit;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      inset: 1px;
-      padding: 10px;
-      position: absolute;
-      z-index: 2;
-    }
+.card-image>i {
+  font-size: 6em;
+  opacity: 0.25;
+}
 
-    .card-image {
-      align-items: center;
-      display: flex;
-      height: 140px;
-      margin-top: 40px;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .card-image>i {
-      font-size: 6em;
-      opacity: 0.25;
-    }
-
-    .card-info-title>h3 {
-      font-size: 1.1em;
-    }
+.card-info-title>h3 {
+  font-size: 1.1em;
+}

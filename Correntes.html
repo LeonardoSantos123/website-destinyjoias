@@ -33,9 +33,12 @@
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/Tela de Carregamento.css">
   <link rel="stylesheet" href="CSS/Componentes.css">
+  <link rel="stylesheet" href="CSS/Página de Produtos/ChatBot.css">
   <link rel="stylesheet" href="CSS/Mobile/Header.css">
   <link rel="stylesheet" href="CSS/Header Desktop.css">
   <link rel="stylesheet" href="CSS/Página de Produtos/Correntes.css">
+  <link rel="stylesheet" href="CSS/Página de Produtos/Duvidas.css">
+  <link rel="stylesheet" href="CSS/Página de Produtos/Footer.css">
 
   <!-- Arquivos CSS do Site (Mobile) -->
   <link rel="stylesheet" href="CSS/Mobile/Header.css">
@@ -85,6 +88,33 @@
       </div>
       <button type="button" class="btn-buy">Realizar a Compra</button>
       <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+
+    <!-- ___________________________________________________________________________________ -->
+
+    <!-- ChatBOT -->
+
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      <img class="icon-chat" src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Icon_Chat.png?raw=true">
+    </div>
+    <div class="chat-box">
+      <div class="chat-box-header">Suporte da Destiny Joias
+        <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs">
+        </div>
+      </div>
+      <div class="chat-input">
+        <form>
+          <input type="text" id="chat-input" placeholder="Escreva sua mensagem..." />
+          <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+        </form>
+      </div>
     </div>
 
 
@@ -153,7 +183,6 @@
 
 
     <!-- ___________________________________________________________________________________ -->
-
 
     <!-- Header (Mobile) -->
 
@@ -240,8 +269,8 @@
 
     <div class="container-produtos">
       <h1 class="primeiro-texto">
-        <span class="black-text">CORRENTES</span>
-        <span class="blue-text">MAIS VENDIDAS</span>
+        <span class="black-text">CONHEÇA</span>
+        <span class="blue-text">NOSSAS CORRENTES</span>
       </h1>
 
       <div class="product-images">
@@ -255,7 +284,15 @@
           <div class="container2" id="container2">
             <p class="product-title">Corrente Cuban</p>
             <p class="price">R$ 100,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
@@ -269,7 +306,15 @@
           <div class="container2" id="container2">
             <p class="product-title">Corrente Thorn</p>
             <p class="price">R$ 150,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
@@ -283,7 +328,15 @@
           <div class="container2" id="container2">
             <p class="product-title">Corrente 12mm</p>
             <p class="price">R$ 120,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
@@ -297,7 +350,15 @@
           <div class="container2" id="container2">
             <p class="product-title">Corrente Colar</p>
             <p class="price">R$ 50,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
@@ -308,57 +369,89 @@
       <div class="product-images">
         <div class="image-container">
           <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto1.jpg?raw=true"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%205/Foto1.png?raw=true"
             class="product-img">
           <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%201/Foto2.jpg?raw=true"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%205/Foto2.png?raw=true"
             class="placeholder-image">
           <div class="container2" id="container2">
-            <p class="product-title">Corrente Cuban</p>
-            <p class="price">R$ 100,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
-          </div>
-          <div class="overlay"></div>
-        </div>
-        <div class="image-container">
-          <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto1.png?raw=true"
-            class="product-img">
-          <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%202/Foto2.png?raw=true"
-            class="placeholder-image">
-          <div class="container2" id="container2">
-            <p class="product-title">Corrente Thorn</p>
-            <p class="price">R$ 150,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
-          </div>
-          <div class="overlay"></div>
-        </div>
-        <div class="image-container">
-          <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto1.jpg?raw=true"
-            class="product-img">
-          <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%203/Foto2.jpg?raw=true"
-            class="placeholder-image">
-          <div class="container2" id="container2">
-            <p class="product-title">Corrente 12mm</p>
+            <p class="product-title">Corrente Riviera</p>
             <p class="price">R$ 120,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
         <div class="image-container">
           <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto1.jpg?raw=true"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%206/Foto1.png?raw=true"
             class="product-img">
           <img
-            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%204/Foto2.jpg?raw=true"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%206/Foto2.png?raw=true"
             class="placeholder-image">
           <div class="container2" id="container2">
-            <p class="product-title">Corrente Colar</p>
-            <p class="price">R$ 50,00</p>
-            <button class="add-cart">Adicionar ao Carrinho</button>
+            <p class="product-title">Kit Cuban</p>
+            <p class="price">R$ 300,00</p>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="image-container">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%207/Foto1.png?raw=true"
+            class="product-img">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%207/Foto2.png?raw=true"
+            class="placeholder-image">
+          <div class="container2" id="container2">
+            <p class="product-title">Corrente 15mm</p>
+            <p class="price">R$ 200,00</p>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="image-container">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%208/Foto1.png?raw=true"
+            class="product-img">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Correntes/Corrente%208/Foto2.png?raw=true"
+            class="placeholder-image">
+          <div class="container2" id="container2">
+            <p class="product-title">Corrente Farpada</p>
+            <p class="price">R$ 320,00</p>
+            <button class="add-cart">
+              <span>Adicionar ao Carrinho</span>
+              <div class="cart2">
+                  <svg viewBox="0 0 36 26">
+                      <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                  </svg>
+              </div>
+          </button>
           </div>
           <div class="overlay"></div>
         </div>
@@ -450,6 +543,136 @@
           </div>
       </div>
       </section>
+
+
+      <!-- ___________________________________________________________________________________ -->
+
+      <!-- Dúvidas Sobre a Destiny Joias -->
+
+      <div class="questoes-container">
+        <div class="questoes-titulo">Respostas das Dúvidas</div>
+        <div class="questoes">
+          <div class="questoes-item">
+            <button id="questoes-button-1" aria-expanded="false"><span class="questoes-title">Porque eu deveria comprar
+                na Destiny Joias?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="questoes-conteudo">
+              <div class="questoes-texto1">Na Destiny Joias oferecemos frete grátis em todos os produtos, proporcionando
+                um ótimo custo-benefício aos nossos clientes. Além disso, nossa coleção tem uma ampla variedade de
+                joias, garantindo opções para todos os gostos e ocasiões.
+              </div>
+            </div>
+          </div>
+          <div class="questoes-item">
+            <button id="questoes-button-2" aria-expanded="false"><span class="questoes-title">Há algum benefício
+                adicional para clientes frequentes na Destiny Joias?</span><span class="icon"
+                aria-hidden="true"></span></button>
+            <div class="questoes-conteudo">
+              <div class="questoes-texto1">Sim, temos um programa de fidelidade que oferece descontos e até mesmo
+                produtos grátis da escolha do cliente quando os nossos clientes fazem compras frequentes em nossa loja.
+              </div>
+            </div>
+          </div>
+          <div class="questoes-item">
+            <button id="questoes-button-3" aria-expanded="false"><span class="questoes-title">É seguro colocar minhas
+                informações bancárias no site da Destiny Joias?</span><span class="icon"
+                aria-hidden="true"></span></button>
+            <div class="questoes-conteudo">
+              <div class="questoes-texto1"> Implementamos protocolos de segurança avançados para proteger todas as
+                informações dos clientes, garantindo uma experiência de compra online segura e confiável.</div>
+            </div>
+          </div>
+          <div class="questoes-item">
+            <button id="questoes-button-4" aria-expanded="false"><span class="questoes-title">A Destiny Joias oferece
+                algum tipo de garantia ou serviço pós-compra para as joias adquiridas?</span><span class="icon"
+                aria-hidden="true"></span></button>
+            <div class="questoes-conteudo">
+              <div class="questoes-texto1">Sim, a nossa loja oferece garantia de 10 dias para o cliente trocar ou
+                devolver o produto para a nossa loja, além de que estamos sempre preparados para dar suporte aos nossos
+                clientes em nosso Instagram e WhatsApp.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer da Destiny Joias -->
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="footer-col top">
+              <h4>Destiny <span class="texto-azul-footer">Joias</span></h4>
+              <ul>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/P%C3%A1gina%20Inicial.png?raw=true"
+                  widht="22" height="22">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/">Página Inicial</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true"
+                  widht="22" height="22">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html">Nossa Equipe</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Cole%C3%A7%C3%A3o%20Diamond.png?raw=true"
+                  widht="22" height="22">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/ColeçãoDiamond.html">Coleção
+                    Diamond</a></li>
+                <a></a>
+              </ul>
+            </div>
+            <div class="footer-ajuda">
+              <h4><span class="texto-azul-footer">Ajuda</span></h4>
+              <ul>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/WhatsApp.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://www.whatsapp.com/">11 99289-1553</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Email.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://www.google.com/intl/pt-BR/gmail/about/"
+                    class="email-footer">contato@destinyjoias.com</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Rastrear%20Entrega.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://rastreamento.correios.com.br/app/index.php">Rastrear Entrega</a></li>
+                <a></a>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nossos <span class="texto-azul-footer">Produtos</span></h4>
+              <ul>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Carrinho.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Pulseiras.html">Pulseiras</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Carrinho.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html">Correntes</a></li>
+                <br>
+                <img class="icone-footer"
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Carrinho.png?raw=true"
+                  widht="20" height="20">
+                <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Anéis.html">Anéis</a></li>
+                <a></a>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nossas <span class="texto-azul-footer">Redes Sociais</span></h4>
+              <div class="social-links">
+                <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/destinyjoias_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- ___________________________________________________________________________________ -->
@@ -457,9 +680,11 @@
     <!-- Arquivo JavaScript do Site -->
 
     <script src="JS/Tela de Carregamento.js"></script>
+    <script src="JS/Página de Produtos/ChatBot.js"></script>
     <script src="JS/Página de Produtos/Correntes.js"></script>
     <script src="JS/Header.js"></script>
     <script src="JS/Header Desktop.js"></script>
+    <script src="JS/Questoes1.js"></script>
 
 </body>
 

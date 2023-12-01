@@ -1,19 +1,10 @@
-@font-face {
-            font-family: 'Galderglynn1884DbRegular';
-            src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/Galderglynn1884DbRegular.otf') format('opentype');
-        }
-
-        @font-face {
-            font-family: 'OpenSansSemibold';
-            src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/OpenSansSemibold.otf') format('opentype');
-        }
 
         .titulo-beneficios {
             margin: 0;
             margin-top: 50px;
             font-size: 30px;
             text-align: center;
-            font-family: 'Galderglynn1884DbRegular', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         .verde-titulo-beneficios {
@@ -88,8 +79,8 @@
         .card-text {
             margin-top: 10px;
             font-size: 25px;
-            font-family: 'OpenSansSemibold', sans-serif;
-            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
             color: black;
             text-decoration: none;
             line-height: 1.3;

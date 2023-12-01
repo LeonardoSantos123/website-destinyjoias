@@ -1,9 +1,4 @@
-@font-face {
-            font-family: 'Open Sans Bold';
-            src: url('https://raw.githubusercontent.com/LeonardoSantos123/fontesdestinyjoias/blob/main/OpenSansSemiBold.otf') format('opentype');
-        }
-
-        .conteudogeral-produtosmobile2 {
+ .conteudogeral-produtosmobile2 {
             padding: 8px;
             margin-top: 15px;
         }
@@ -19,7 +14,7 @@
             color: #1c1c1c;
             font-size: 20px;
             font-weight: bold;
-            font-family: 'Open Sans Bold', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
         .seta1-produtosmobile2 {
@@ -99,7 +94,7 @@
             font-size: 18px;
             margin-left: 5px;
             font-weight: bold;
-            font-family: 'Open Sans Bold', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #1c1c1c;
         }
 
@@ -108,6 +103,6 @@
             margin-top: 2px;
             margin-left: 5px;
             font-weight: bold;
-            font-family: 'Open Sans Bold', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #7088da;
         }

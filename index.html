@@ -43,6 +43,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
   <link rel="stylesheet" href="CSS/Componentes.css">
   <link rel="stylesheet" href="CSS/Carrinho.css">
+  <link rel="stylesheet" href="CSS/ChatBot.css">
   <link rel="stylesheet" href="CSS/Banner1.css">
   <link rel="stylesheet" href="CSS/Categorias1.css">
   <link rel="stylesheet" href="CSS/Produtos1.css">
@@ -108,6 +109,35 @@
       <button type="button" class="btn-buy">Realizar a Compra</button>
       <i class='bx bx-x' id="close-cart"></i>
     </div>
+
+
+    <!-- ___________________________________________________________________________________ -->
+
+    <!-- ChatBOT -->
+
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      <img class="icon-chat"
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Icon_Chat.png?raw=true">
+    </div>
+    <div class="chat-box">
+      <div class="chat-box-header">Suporte da Destiny Joias
+        <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs">
+        </div>
+      </div>
+      <div class="chat-input">
+        <form>
+          <input type="text" id="chat-input" placeholder="Escreva sua mensagem..." />
+          <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+        </form>
+      </div>
+    </div>
+
 
     <!-- ___________________________________________________________________________________ -->
 
@@ -251,7 +281,6 @@
 
   <!-- ___________________________________________________________________________________ -->
 
-
   <!-- Banner de Imagens -->
 
   <!-- Carrossel para desktop -->
@@ -302,7 +331,6 @@
 
 
   <!-- ___________________________________________________________________________________ -->
-
 
   <!-- Categorias de Produtos -->
 
@@ -1293,6 +1321,7 @@
 <!-- Arquivos JavaScript do Site -->
 
 <script src="JS/Carrinho.js"></script>
+<script src="JS/ChatBot.js"></script>
 <script src="JS/Banner1.js"></script>
 <script src="JS/Clientes1.js"></script>
 <script src="JS/Ajuda1.js"></script>

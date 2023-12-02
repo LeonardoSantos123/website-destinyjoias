@@ -64,7 +64,7 @@
 
 .chat-box-header {
   background: #7188da;
-  height: 70px;
+  height: 40px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: white;
@@ -96,9 +96,9 @@
 
 #chat-input {
   background: #f4f7f9;
-  width: 100%;
+  width: 65%;
   position: relative;
-  height: 47px;
+  height: 25px;
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 10px;

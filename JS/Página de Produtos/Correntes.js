@@ -22,9 +22,7 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-    console.log('Page is ready!');
 
-    // Adicione os produtos do carrinho ao DOM apenas se o usuário tiver interagido com a página
     if (localStorage.getItem('cart')) {
         const cartFromLocalStorage = getCartFromLocalStorage();
         displayCartItems(cartFromLocalStorage);
@@ -50,12 +48,10 @@ function ready() {
     document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
 }
 
-// Botão de Realizar a Compra
 function buyButtonClicked() {
     var cartContent = document.getElementsByClassName("cart-content")[0];
 
     if (cartContent.children.length > 0) {
-        // Armazenar temporariamente os produtos a serem removidos
         const productsToRemove = [];
 
         while (cartContent.hasChildNodes()) {
@@ -65,7 +61,6 @@ function buyButtonClicked() {
             cartContent.removeChild(cartItem);
         }
 
-        // Remover produtos do LocalStorage imediatamente
         productsToRemove.forEach(productName => {
             removeProductFromLocalStorage(productName);
         });
@@ -92,9 +87,6 @@ function removeProductsFromLocalStorageOnPageLoad() {
 document.addEventListener("DOMContentLoaded", function () {
     removeProductsFromLocalStorageOnPageLoad();
 });
-
-
-// Remover Produtos do Carrinho
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -124,8 +116,6 @@ function quantityChanged(event) {
     }
     updatetotal();
 }
-
-// Adicionar ao Carrinho
 
 function addCartClicked(event) {
     var button = event.target;
@@ -161,7 +151,7 @@ function isProductInCart(title) {
 }
 
 function updateCartInLocalStorage(cart) {
-    console.log('Updating cart in LocalStorage:', cart);
+    console.log('Atualização do Carrinho no LocalStorage:', cart);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
@@ -171,7 +161,6 @@ function getCartFromLocalStorage() {
         const decodedCart = JSON.parse(cartString);
         return decodedCart;
     }
-    // Se o item 'cart' não estiver definido, retorne um array vazio
     return [];
 }
 
@@ -179,7 +168,6 @@ function addProductToCart(title, price, productImg) {
     var cartItems = document.getElementsByClassName("cart-content")[0];
     var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
 
-    // Verifique se o produto já está no carrinho
     for (var i = 0; i < cartItemsNames.length; i++) {
         if (cartItemsNames[i].innerText === title) {
             produtoExistenteCarrinho(title);
@@ -213,7 +201,6 @@ function addProductToCart(title, price, productImg) {
 
     updatetotal();
 
-    // Após adicionar um produto, atualize o carrinho no LocalStorage
     const currentCart = getCartFromLocalStorage();
     const updatedCart = [...currentCart, { title, price, productImg, quantity: 1 }];
     updateCartInLocalStorage(updatedCart);
@@ -222,15 +209,11 @@ function addProductToCart(title, price, productImg) {
 function displayCartItems(cart) {
     const cartContent = document.getElementsByClassName("cart-content")[0];
 
-    // Limpe o conteúdo atual do carrinho
     cartContent.innerHTML = '';
 
-    // Use um conjunto (Set) para armazenar títulos únicos de produtos
     const uniqueProductTitles = new Set();
 
-    // Adicione os produtos do carrinho ao DOM, evitando duplicatas
     cart.forEach(product => {
-        // Verifique se o título do produto já foi adicionado
         if (!uniqueProductTitles.has(product.title)) {
             addProductToCart(
                 product.title,
@@ -239,12 +222,10 @@ function displayCartItems(cart) {
                 product.quantity
             );
 
-            // Adicione o título ao conjunto para evitar duplicatas
             uniqueProductTitles.add(product.title);
         }
     });
 
-    // Atualize o total após adicionar os produtos ao DOM
     updatetotal();
 }
 

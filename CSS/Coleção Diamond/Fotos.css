@@ -1,0 +1,173 @@
+.grid {
+  display: grid;
+}
+
+:root {
+  --width: calc((100vw - 3em) / 2);
+  --height: calc(1200 * var(--width) / 1000);
+}
+
+.next-content {
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.next-content::before {
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.wide-2 {
+  margin-bottom: 20px;
+}
+
+.layout {
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, var(--width));
+  grid-auto-rows: var(--height);
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  :root {
+    --width: calc((100vw - 4rem) / 3);
+  }
+
+  .layout {
+    grid-template-columns: repeat(3, var(--width));
+  }
+}
+
+@media screen and (min-width: 60em) {
+  :root {
+    --width: calc((60em - 5rem) / 4);
+  }
+
+  .layout {
+    grid-template-columns: repeat(4, var(--width));
+  }
+}
+
+.wide-2 {
+  grid-column-end: span 2;
+}
+
+.tall-2 {
+  grid-row-end: span 2;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .wide-3-m {
+    grid-column-end: span 3;
+  }
+}
+
+.zoom {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.3s ease-out;
+}
+
+.zoom:hover,
+.zoom:focus {
+  transform: scale(1.05);
+}
+
+.zoom:active {
+  transform: scale(1);
+}
+
+.banner-descontos-fotos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+}
+
+.imagem-fotos-diamond {
+  width: 2.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0.6rem;
+  padding-top: 0.8rem;
+}
+
+.texto1-fotos-diamond {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.texto2-fotos-diamond {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.texto3-fotos-diamond {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  width: 90%;
+}
+
+.texto4-fotos-diamond {
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 0.7rem;
+  font-weight: 500;
+}
+
+.texto4-azul-fotos-diamond {
+  color: #7188da;
+}
+
+.linha {
+  width: 30%;
+  height: 0.4rem;
+  border-radius: 5rem;
+  background: #161616;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+
+  .next-content {
+    margin-top: -3rem;
+    padding-top: 4.5rem;
+}
+
+  .texto3-fotos-diamond {
+    font-size: 1em;
+  }
+
+  .texto4-fotos-diamond {
+    font-size: 1.2em;
+    line-height: 1.6rem;
+  }
+
+  .linha {
+    margin-bottom: 4.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .wide-2 {
+    margin-bottom: 0;
+  }
+
+  .mv5 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -195,7 +195,7 @@
   z-index: 2;
   float: right;
   width: 4rem;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   margin-bottom: 2rem;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -213,7 +213,7 @@
 }
 #menuicon .bar {
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	display: block;
 	position: relative;
 	background: #fff;
@@ -241,12 +241,13 @@
 }
 .menu-open .icon-container #menuicon .bar.bar1 {
 	-webkit-transform: translateY(4px) rotate(45deg);
-	transform: translateY(4px) rotate(44deg);
+	transform: translateY(4px) rotate(45deg);
 }
 .menu-open .icon-container #menuicon .bar.bar2 {
 	-webkit-transform: translateY(3px) rotate(-45deg);
-	transform: translateY(3px) rotate(-50deg);
+	transform: translateY(3px) rotate(-45deg);
 }
 .menu-open .icon-container #menuicon .bar.bar3 {
-	display: none;
+	-webkit-transform: translateY(3px) rotate(-45deg);
+	transform: translateY(3px) rotate(-45deg);
 }

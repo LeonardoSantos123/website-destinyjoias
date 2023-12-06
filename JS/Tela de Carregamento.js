@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function () {
         loader.classList.add('fade-out');
+        loader.addEventListener('animationend', function() {
+            loader.remove();
+        });
         document.getElementById('loading-page').style.display = 'block';
     }, 1000);
 });

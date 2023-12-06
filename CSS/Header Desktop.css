@@ -238,3 +238,10 @@
   button:focus {
 	outline: none;
   }
+
+  .menu-icon-desktop {
+    width: 40px;
+    height: auto;
+    margin-bottom: -0.2rem;
+    margin-right: 0.2rem;
+}

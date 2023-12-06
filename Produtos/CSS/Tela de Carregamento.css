@@ -1,0 +1,139 @@
+:root {
+    --loader-background-color: #161616;
+    --loader-stroke-color: #7188da;
+}
+
+.loading-page {
+    position: relative;
+    height: 100%;
+    display: none;
+}
+
+.profile-main-loader {
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    z-index: 9000 !important;
+    display: block;
+    background-color: var(--loader-background-color);
+    opacity: 1;
+}
+
+.profile-main-loader.fade-out {
+    -webkit-animation: fadeout-profile 1s ease-in-out forwards;
+    animation: fadeout-profile 1s ease-in-out forwards;
+}
+
+.profile-main-loader .loader {
+    position: relative;
+    margin: 0px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.profile-main-loader .loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.circular-loader {
+    opacity: 0;
+    -webkit-animation: fadein-circular 1s ease-in-out forwards;
+    animation: fadein-circular 1s ease-in-out forwards;
+    -webkit-animation: fadeout-profile 2s ease-in-out forwards;
+    animation: fadeout-profile 2s ease-in-out forwards;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+}
+
+.loader-path {
+    stroke-dasharray: 150, 200;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@keyframes fadein-circular {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout-profile {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@-webkit-keyframes color {
+    0%, 40%, 66%, 80%, 90% {
+        stroke: var(--loader-stroke-color);
+    }
+}
+
+@keyframes color {
+    0%, 40%, 66%, 80%, 90% {
+        stroke: var(--loader-stroke-color);
+    }
+}

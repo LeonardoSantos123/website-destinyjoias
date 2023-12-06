@@ -32,8 +32,14 @@
 
 .retangulo1-diamond img {
     width: 100%; 
-    height: 7rem;
+    height: 10.3rem;
     display: block;
+}
+
+.retangulo-curva-img {
+  width: 100% !important; 
+  height: 7rem !important;
+  display: block !important;
 }
 
 .retangulo2-diamond {

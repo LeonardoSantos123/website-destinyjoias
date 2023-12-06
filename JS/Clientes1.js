@@ -2,11 +2,11 @@ const moveLeft = document.getElementById("moveLeft");
     const moveRight = document.getElementById("moveRight");
     const carouselParts = document.querySelectorAll(".carousel-part");
     const carouselImages = [
-      "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/ImagemPulseiraDiamond.jpg?raw=true",
-      "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CorrenteDiamond.jpg?raw=true",
-      "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/ImagemPulseiraDiamond.jpg?raw=true",
-      "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/ImagemPulseiraDiamond.jpg?raw=true",
-      "https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/ImagemPulseiraDiamond.jpg?raw=true",
+      "IMG/19.png",
+      "IMG/20.png",
+      "IMG/21.png",
+      "IMG/22.png",
+      "IMG/23.png",
     ];
 
     let activePart = 0;

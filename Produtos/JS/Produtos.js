@@ -68,6 +68,11 @@ function buyButtonClicked() {
         updatetotal();
 
         showPurchaseNotification();
+
+        setTimeout(function () {
+            window.location.href = "https://leonardosantos123.github.io/website-destinyjoias/Checkout.html";
+        }, 2000); 
+
     } else {
         showEmptyCartNotification();
     }

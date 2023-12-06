@@ -250,4 +250,5 @@
 .menu-open .icon-container #menuicon .bar.bar3 {
 	-webkit-transform: translateY(3px) rotate(-45deg);
 	transform: translateY(3px) rotate(-45deg);
+	opacity: 0;
 }

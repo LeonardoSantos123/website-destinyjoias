@@ -44,9 +44,6 @@ $(function () {
             return 'Olá! Como posso ajudar?';
         } else if (userMsg.includes('ajuda')) {
             return 'Claro, estou aqui para ajudar! O que você precisa?';
-            } else if (userMsg.includes('corrente cuban')) {
-    return 'A Corrente Cuban custa R$100 e tem estoque disponível em nossa loja na página de produtos.';
-}
         } else if (userMsg.includes('produto')) {
             if (userMsg.includes('comprar')) {
                 return 'Me diga qual é o produto que você deseja comprar.';

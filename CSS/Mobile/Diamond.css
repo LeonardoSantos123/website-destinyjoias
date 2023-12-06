@@ -32,7 +32,7 @@
 
 .retangulo1-diamond img {
     width: 100%; 
-    height: auto; 
+    height: 10.3rem;
     display: block;
 }
 
@@ -156,23 +156,23 @@ main a {
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Foto1.png?raw=true") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("IMG/1.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Foto2.png?raw=true") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("IMG/2.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("https://via.placeholder.com/358x402") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("IMG/3.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("https://via.placeholder.com/358x402") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("IMG/4.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("https://via.placeholder.com/358x402") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #161616, rgba(32, 58, 67, 0), rgba(44, 83, 100, 0)), url("IMG/5.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
@@ -433,5 +433,4 @@ main a {
 .imagem2-diamond {
   margin-left: 195px !important;
 }
-
 }

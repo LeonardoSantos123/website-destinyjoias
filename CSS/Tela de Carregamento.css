@@ -1,5 +1,5 @@
 :root {
-    --loader-background-color: rgba(16, 16, 16, 1);
+    --loader-background-color: #161616;
     --loader-stroke-color: #7188da;
 }
 
@@ -75,10 +75,11 @@
 @keyframes fadeout-profile {
     from {
         opacity: 1;
+        visibility: visible;
     }
     to {
         opacity: 0;
-        display: none;
+        visibility: hidden;
     }
 }
 

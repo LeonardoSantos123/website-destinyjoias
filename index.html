@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destiny Joias</title>
 
   <!-- Ícone do Website da Destiny Joias -->
   <link rel="icon"
@@ -16,27 +17,57 @@
   <meta name="msapplication-TileImage"
     content="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/%C3%8Dcone%20do%20Site/Icon_DestinyJoias.png?raw=true">
 
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+
+
+  <!-- Boostrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!-- Arquivos CSS do Site -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
-
   <link rel="stylesheet" href="CSS/Componentes.css">
+  <link rel="stylesheet" href="CSS/Carrinho.css">
+  <link rel="stylesheet" href="CSS/ChatBot.css">
+  <link rel="stylesheet" href="CSS/Banner1.css">
+  <link rel="stylesheet" href="CSS/Categorias1.css">
+  <link rel="stylesheet" href="CSS/Produtos1.css">
+  <link rel="stylesheet" href="CSS/Produtos2.css">
+  <link rel="stylesheet" href="CSS/Categorias2.css">
+  <link rel="stylesheet" href="CSS/Banner2.css">
+  <link rel="stylesheet" href="CSS/Beneficios1.css">
+  <link rel="stylesheet" href="CSS/Clientes1.css">
+  <link rel="stylesheet" href="CSS/Ajuda1.css">
+  <link rel="stylesheet" href="CSS/Questoes1.css">
+  <link rel="stylesheet" href="CSS/Footer.css">
   <link rel="stylesheet" href="CSS/Tela de Carregamento.css">
-  <link rel="stylesheet" href="CSS/Equipe/Equipe.css">
   <link rel="stylesheet" href="CSS/Header Desktop.css">
-  <link rel="stylesheet" href="CSS/Mobile/Header.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-
-  <!-- Bibliotecas JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Arquivos CSS do Site (Mobile) -->
+  <link rel="stylesheet" href="CSS/Mobile/ProdutosMobile1.css">
+  <link rel="stylesheet" href="CSS/Mobile/BannerMobile2.css">
+  <link rel="stylesheet" href="CSS/Mobile/ProdutosMobile2.css">
+  <link rel="stylesheet" href="CSS/Mobile/Header Mobile.css">
+  <link rel="stylesheet" href="CSS/Mobile/Diamond.css">
+  <link rel="stylesheet" href="CSS/Mobile/Beneficios.css">
+  <link rel="stylesheet" href="CSS/Mobile/Clientes.css">
+  <link rel="stylesheet" href="CSS/Mobile/Redes Sociais.css">
 </head>
 
 <body>
@@ -51,6 +82,79 @@
     </div>
   </div>
   <div id="loading-page">
+
+    <!-- ___________________________________________________________________________________ -->
+
+    <!-- Carrinho de Produtos -->
+
+    <div id="cart-icon">
+      <img
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconCarrinho.png?raw=true"
+        class="carrinho1">
+      <img
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/IconCarrinho2.png?raw=true"
+        class="carrinho2">
+    </div>
+    <div class="cart">
+      <div class="cart-rectangle">
+        <img class="logo-cart"
+          src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/LogoDestinyJoias.png?raw=true">
+      </div>
+      <h2 class="cart-title">Seu Carrinho</h2>
+      <div class="cart-content">
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price" id="total-price">$0</div>
+      </div>
+      <button type="button" class="btn-buy">Realizar a Compra</button>
+      <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+
+    <!-- ___________________________________________________________________________________ -->
+
+    <!-- ChatBOT -->
+
+    <div id="chat-circle" class="btn btn-raised">
+      <div id="chat-overlay"></div>
+      <img class="icon-chat"
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/P%C3%A1gina%20de%20Produtos/Imagens/Icon_Chat.png?raw=true">
+    </div>
+    <div class="chat-box">
+      <div class="chat-box-header">Suporte da Destiny Joias
+        <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs">
+        </div>
+      </div>
+      <div class="chat-input">
+        <form>
+          <input type="text" id="chat-input" placeholder="Escreva sua mensagem..." />
+          <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- ___________________________________________________________________________________ -->
+
+    <!-- Notificações -->
+
+    <div class="notification">
+      <div class="rectangle">
+        <div class="rectanglefundo">
+          <img src="">
+        </div>
+        <div class="notification-text">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
 
     <!-- ___________________________________________________________________________________ -->
 
@@ -74,20 +178,60 @@
           <ul>
 
             <li>
-              <a href="https://leonardosantos123.github.io/website-destinyjoias">
+              <a href="https://leonardosantos123.github.io/website-destinyjoias"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_PaginaInicial.png?raw=true">
                 Página Inicial
               </a>
             </li>
 
             <li>
-              <a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html">
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true">
                 Nossa Equipe
               </a>
             </li>
 
             <li>
-              <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html">
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Cole%C3%A7%C3%A3o%20Diamond.png?raw=true">
+                Coleção Diamond
+              </a>
+            </li>
+
+            <br><br>
+
+            <li>
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Pulseira.png?raw=true">
+                Pulseiras
+              </a>
+            </li>
+
+            <li>
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Corrente.png?raw=true">
                 Correntes
+              </a>
+            </li>
+
+            <li>
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Anel.png?raw=true">
+                Anéis
+              </a>
+            </li>
+
+            <li>
+              <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html"><img
+                class="menu-icon-desktop"
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Rel%C3%B3gio.png?raw=true">
+                Relógios
               </a>
             </li>
 
@@ -138,8 +282,10 @@
           <ul class="menu">
             <li class="menu-item">
               <a href="https://leonardosantos123.github.io/website-destinyjoias"><img class="menu-icon"
-                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true">Página
+                  src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_PaginaInicial.png?raw=true">Página
                 Inicial</a>
+                <div class="retangulo-cinza"></div>
+              <div class="retangulo-azul"></div>
             </li>
             <li class="menu-item"><a
                 href="https://leonardosantos123.github.io/website-destinyjoias/ColeçãoDiamond.html"><img
@@ -149,10 +295,7 @@
             <li class="menu-item"><a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html"><img
                   class="menu-icon"
                   src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true">Nossa
-                Equipe</a>
-              <div class="retangulo-cinza"></div>
-              <div class="retangulo-azul"></div>
-            </li>
+                Equipe</a></li>
             <br><br>
             <li class="menu-item"><a href="https://leonardosantos123.github.io/website-destinyjoias/Pulseiras.html"><img
                   class="menu-icon"
@@ -179,52 +322,1078 @@
 
   <!-- ___________________________________________________________________________________ -->
 
-  <!-- Equipe Destiny Joias -->
+  <!-- Banner de Imagens -->
 
-  <div class="conteudo-equipe">
-
-    <section class="container-equipe">
-
-      <div class="equipe">
-        <h2 class="titulo-equipe">Conheça a Nossa Equipe</h2>
-        <div class="team-cards">
-
-          <div class="swiper-container">
-            <div class="swiper-wrapper"></div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-          <div class="navigation">
-            <div class="swiper-button-prev">
-              <svg id="seta1" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <path d="M17.1421 2.99998L3 17.1421L17.1421 31.2843" stroke="#398dfc" stroke-width="3"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg id="seta2" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <path d="M17.1422 31.2843L31.2843 17.1421L17.1422 2.99998" stroke="#398dfc" stroke-width="3"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
+  <!-- Carrossel para desktop -->
+  <div id="carousel-desktop" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item desktop active">
+        <img
+          src="IMG/1.png">
       </div>
+      <div class="item desktop">
+        <img src="IMG/2.png">
+      </div>
+      <div class="item desktop">
+        <img src="IMG/3.png">
+      </div>
+    </div>
+
+    <!-- Indicadores para desktop -->
+    <ol class="carousel-indicators desktop">
+      <li data-target="#carousel-desktop" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-desktop" data-slide-to="1"></li>
+      <li data-target="#carousel-desktop" data-slide-to="2"></li>
+    </ol>
   </div>
-  </section>
+
+  <!-- Carrossel para dispositivos móveis -->
+  <div id="carousel-mobile" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item mobile active">
+        <img
+          src="IMG/4.png">
+      </div>
+      <div class="item mobile">
+        <img src="IMG/5.png">
+      </div>
+      <div class="item mobile">
+        <img src="IMG/6.png">
+      </div>
+    </div>
+
+    <!-- Indicadores para dispositivos móveis -->
+    <ol class="carousel-indicators mobile">
+      <li data-target="#carousel-mobile" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-mobile" data-slide-to="1"></li>
+      <li data-target="#carousel-mobile" data-slide-to="2"></li>
+    </ol>
   </div>
-  </div>
+
 
   <!-- ___________________________________________________________________________________ -->
 
-  <!-- Arquivos JavaScript do Site -->
+  <!-- Categorias de Produtos -->
 
-  <script src="JS/Componentes.js"></script>
-  <script src="JS/Equipe/Equipe.js"></script>
-  <script src="JS/Tela de Carregamento.js"></script>
-  <script src="JS/Header Desktop.js"></script>
-  <script src="JS/Header.js"></script>
+  <div class="container">
+    <div class="categorias">
+      <div class="imagem-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">
+          <img class="imagem"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/teste%20imagem%20mobile.png?raw=true">
+        </a>
+      </div>
+      <div class="imagem-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">
+          <img class="imagem"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/teste%20imagem%20mobile2.png?raw=true">
+        </a>
+      </div>
+      <div class="imagem-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Anéis.html">
+          <img class="imagem"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/teste%20imagem%20mobile3.png?raw=true">
+        </a>
+      </div>
+      <div class="imagem-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Relógios.html">
+          <img class="imagem" src="https://cdn.shopify.com/s/files/1/0764/8293/7118/files/Relogios.png?v=1684714987">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Produtos Mais Vendidos -->
+
+  <div class="codigo-desktop">
+    <h1 class="centered-text">
+      <span class="black-text">PRODUTOS </span>
+      <span class="blue-text">MAIS VENDIDOS</span>
+    </h1>
+
+    <div class="product-images">
+      <div class="image-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html" target="_blank">
+          <img src="IMG/7.jpg"
+            alt="Produto 1" class="product-image">
+          <img src="IMG/8.jpg" alt="Produto 1" class="placeholder-image">
+          <div class="container2">
+            <p class="product-name">Corrente Cuban</p>
+            <p class="product-price">R$ 100,00</p>
+          </div>
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html" target="_blank">
+          <img src="IMG/9.png" alt="Produto 2" class="product-image">
+          <img src="IMG/10.png" alt="Produto 2" class="placeholder-image">
+          <div class="container2">
+            <p class="product-name">Corrente Thorn</p>
+            <p class="product-price">R$ 150,00</p>
+          </div>
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html" target="_blank">
+          <img src="IMG/11.png" alt="Produto 3" class="product-image">
+          <img src="IMG/12.png" alt="Produto 3" class="placeholder-image">
+          <div class="container2">
+            <p class="product-name">Pulseira Riviera</p>
+            <p class="product-price">R$ 180,00</p>
+          </div>
+          <div class="overlay"></div>
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html" target="_blank">
+          <img src="IMG/13.png" alt="Produto 4" class="product-image">
+          <img src="IMG/14.png" alt="Produto 4" class="placeholder-image">
+          <div class="container2">
+            <p class="product-name">Kit Cuban</p>
+            <p class="product-price">R$ 400,00</p>
+          </div>
+          <div class="overlay"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Produtos Mais Vendidos (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="titulo-produtosmobile1">PRODUTOS MAIS VENDIDOS</div>
+    <div class="container-produtosmobile1">
+      <div class="produtos-produtosmobile1">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">
+          <img src="IMG/7.jpg"
+            alt="">
+          <p class="produto-nome-produtosmobile1">Corrente Cuban</p>
+          <p class="produto-preco-produtosmobile1">R$100,00</p>
+        </a>
+      </div>
+      <div class="produtos-produtosmobile1">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">
+          <img src="IMG/9.png"
+            alt="">
+          <p class="produto-nome-produtosmobile1">Corrente Thorn</p>
+          <p class="produto-preco-produtosmobile1">R$150,00</p>
+        </a>
+      </div>
+      <div class="produtos-produtosmobile1">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">
+          <img src="IMG/11.png"
+            alt="">
+          <p class="produto-nome-produtosmobile1">Pulseira Riviera</p>
+          <p class="produto-preco-produtosmobile1">R$180,00</p>
+        </a>
+      </div>
+      <div class="produtos-produtosmobile1">
+        <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">
+          <img src="IMG/13.png"
+            alt="">
+          <p class="produto-nome-produtosmobile1">Kit Cuban</p>
+          <p class="produto-preco-produtosmobile1">R$400,00</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Banner de Descontos (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="container-bannermobile2">
+      <div class="retangulo-bannermobile2">
+        <div class="conteudo-retangulo">
+          <div class="imagem-retangulo-bannermobile2">
+            <img src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CupomIcon.png?raw=true"
+              alt="Imagem do retângulo">
+          </div>
+          <div class="texto-retangulo-bannermobile2">
+            <p class="texto1-bannermobile2">USE O NOSSO CUPOM</p>
+            <p class="texto2-bannermobile2">DESTINYJOIAS20</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Produtos em Categoria (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="conteudogeral-produtosmobile2">
+      <div class="container-produtosmobile2">
+        <div class="texto1-produtosmobile2">Novos Lançamentos</div>
+        <div class="retangulo-azul-produtosmobile2"></div>
+      </div>
+
+      <div class="conteudo-produtosmobile2">
+        <div class="corrente-container-produtosmobile2">
+          <div class="corrente-container2-produtosmobile2"></div>
+          <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Anéis.html"></a>
+          <img class="corrente-image-produtosmobile2"
+            src="IMG/15.png"
+            alt="">
+          <div class="retangulo-branco-produtosmobile2">
+            <div class="texto-corrente-produtosmobile2">Anel Diamond</div>
+            <div class="texto-preco-produtosmobile2">R$100</div>
+          </a>
+          </div>
+        </div>
+
+        <div class="corrente-container-produtosmobile2">
+          <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Relógios.html"></a>
+          <img class="corrente-image-produtosmobile2"
+            src="IMG/24.png"
+            alt="">
+          <div class="retangulo-branco-produtosmobile2">
+            <div class="texto-corrente-produtosmobile2">Relógio Diamond</div>
+            <div class="texto-preco-produtosmobile2">R$280</div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteudo2-produtosmobile2">
+        <div class="container-produtosmobile2">
+          <div class="texto1-produtosmobile2">Nossas Pulseiras</div>
+          <div class="retangulo2-azul-produtosmobile2"></div>
+        </div>
+
+        <div class="conteudo-produtosmobile2">
+          <div class="corrente-container-produtosmobile2">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">
+            <img class="corrente-image-produtosmobile2"
+              src="IMG/18.png"
+              alt="">
+            <div class="retangulo-branco-produtosmobile2">
+              <div class="texto-corrente-produtosmobile2">Pulseira 13mm</div>
+              <div class="texto-preco-produtosmobile2">R$80</div>
+            </a>
+            </div>
+          </div>
+
+          <div class="corrente-container-produtosmobile2">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">
+            <img class="corrente-image-produtosmobile2"
+              src="IMG/13.png"
+              alt="">
+            <div class="retangulo-branco-produtosmobile2">
+              <div class="texto-corrente-produtosmobile2">Kit Cuban</div>
+              <div class="texto-preco-produtosmobile2">R$400</div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Coleção Diamond (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="retangulo1-diamond">
+      <img
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/retangulo-curva.png?raw=true">
+      <div class="retangulo2-diamond">
+        <main>
+          <div>
+            <div class="conteudo-diamond">
+              <span>NOVIDADES</span>
+              <h1>Coleção Diamond</h1>
+              <hr>
+              <p>Explore a Melhor Coleção de Joias Cravejadas do Brasil</p>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--one">
+                <div>
+                  <h2>Corrente Prong</h2>
+                  <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">Comprar</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--two">
+                <div>
+                  <h2>Corrente Cuban</h2>
+                  <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">Comprar</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--three">
+                <div>
+                  <h2>Pulseira 13mm</h2>
+                  <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">Comprar</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--four">
+                <div>
+                  <h2>Pulseira Thorn</h2>
+                  <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">Comprar</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide--five">
+                <div>
+                  <h2>Anel Diamond</h2>
+                  <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Anéis.html">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </main>
+
+        <div class="texto-geral-diamond">
+          <h1>
+            <span class="texto2-diamond">CONHEÇA A NOSSA</span>
+            <span class="magic">
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                </svg>
+              </span>
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l-42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                </svg>
+              </span>
+              <span class="magic-star">
+                <svg viewBox="0 0 512 512">
+                  <path
+                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                </svg>
+              </span>
+              <span class="magic-text">COLEÇÃO</span>
+            </span>
+          </h1>
+        </div>
+        <div class="conteudo-texto-diamond">
+          <div class="retangulo3-diamond">
+            <img class="icone-qualidade-diamond"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Qualidade.png?raw=true">
+          </div>
+          <span class="texto-retangulo-diamond">QUALIDADE</span>
+        </div>
+
+        <div class="conteudo-texto-diamond">
+          <div class="retangulo3-diamond">
+            <img class="icone-preco-diamond"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Pre%C3%A7o.png?raw=true">
+          </div>
+          <span class="texto-retangulo-diamond">PREÇO</span>
+        </div>
+
+        <div class="conteudo-texto-diamond">
+          <div class="retangulo3-diamond">
+            <img class="icone-garantia-diamond"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Garantia.png?raw=true">
+          </div>
+          <span class="texto-retangulo-diamond">GARANTIA</span>
+        </div>
+
+        <div class="conteudo-texto-diamond">
+          <div class="retangulo3-diamond">
+            <img class="icone-frete-diamond"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Cole%C3%A7%C3%A3o%20Diamond%20(Mobile)/Icon_Frete.png?raw=true">
+          </div>
+          <span class="texto-retangulo-diamond">FRETE GRÁTIS</span>
+        </div>
+
+        <div class="retangulo4-diamond">
+          <img class="imagem1-diamond"
+            src="IMG/16.png">
+          <img class="imagem2-diamond"
+            src="IMG/17.png">
+          <div class="produtos-diamond">
+            <div class="retangulo5-diamond">
+              <div class="nomedoproduto-retangulo5">Corrente Prong</div>
+              <div class="preçodoproduto-retangulo5">R$100 </div>
+            </div>
+            <div class="retangulo5-diamond">
+              <div class="nomedoproduto-retangulo5">Corrente Cuban</div>
+              <div class="preçodoproduto-retangulo5">R$150 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Benefícios (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="conteudo-beneficios">
+      <div class="container-banner-beneficios">
+        <div class="retangulo-banner-beneficios">
+          <div class="conteudo-retangulo-banner-beneficios">
+            <div class="imagem-retangulo-banner-beneficios">
+              <img
+                src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Icon_Desconto.png?raw=true">
+            </div>
+            <div class="texto-retangulo-banner-beneficios">
+              <p class="texto1-banner-beneficios">20% DE DESCONTO</p>
+              <p class="texto2-banner-beneficios">NO MÊS DE OUTUBRO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-beneficios">
+        <div class="imagem-beneficios">
+          <img class="background-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Background_Beneficios.png?raw=true">
+          <img class="icone-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Icon_Parcelamento.png?raw=true">
+          <p class="texto-beneficios">DIVERSAS OPÇÕES DE PARCELAMENTO</p>
+        </div>
+
+        <div class="imagem-beneficios">
+          <img class="background-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Background_Beneficios.png?raw=true">
+          <img class="icone-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Icon_Frete.png?raw=true">
+          <p class="texto-beneficios">FRETE GRÁTIS EM TODOS OS PEDIDOS</p>
+        </div>
+
+        <div class="imagem-beneficios">
+          <img class="background-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Background_Beneficios.png?raw=true">
+          <img class="icone-beneficios"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Benef%C3%ADcios/Icon_Garantia.png?raw=true">
+          <p class="texto-beneficios">GARANTIA DE 7 DIAS PARA TESTAR OS PRODUTOS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+  <!-- Avaliações dos Clientes (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="container-clientes">
+      <div class="retangulo1-clientes">
+        <p class="texto1-clientes">AVALIAÇÕES DOS CLIENTES</p>
+      </div>
+
+      <div class="slides-container">
+        <div class="retangulo3-clientes slide-clientes" data-slide="1">
+          <div class="retangulo2-clientes">
+            <img class="imagem-clientes"
+              src="IMG/19.png">
+          </div>
+          <p class="texto2-clientes">Lucas Alves</p>
+          <p class="texto3-clientes">Comprei esses produtos e estou impressionado! Os produtos são incriveís!</p>
+          <div class="estrelas-container">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+          </div>
+          <div class="retangulo4-clientes"></div>
+        </div>
+
+        <div class="retangulo3-clientes slide-clientes" data-slide="2">
+          <div class="retangulo2-clientes">
+            <img class="imagem-clientes"
+              src="IMG/20.png">
+          </div>
+          <p class="texto2-clientes">Mateus Silva</p>
+          <p class="texto3-clientes">Os produtos são de alta qualidade, o brilho suave adiciona um toque elegante.</p>
+          <div class="estrelas-container">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+          </div>
+          <div class="retangulo4-clientes"></div>
+        </div>
+
+        <div class="retangulo3-clientes slide-clientes" data-slide="3">
+          <div class="retangulo2-clientes">
+            <img class="imagem-clientes"
+              src="IMG/21.png">
+          </div>
+          <p class="texto2-clientes">Rodrigo Pereira</p>
+          <p class="texto3-clientes">A qualidade dessa corrente e dessa pulseira são impressionantes!</p>
+          <div class="estrelas-container">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+            <img class="imagem-estrela-clientes"
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Estrela.png?raw=true">
+          </div>
+          <div class="retangulo4-clientes"></div>
+        </div>
+
+        <div class="container-seta-clientes">
+          <img class="seta-clientes seta2-clientes"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Seta.png?raw=true"
+            onclick="changeSlide(-1)">
+          <img class="seta-clientes"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Avalia%C3%A7%C3%B5es%20dos%20Clientes/Seta.png?raw=true"
+            onclick="changeSlide(1)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Redes Sociais (Mobile) -->
+
+  <div class="codigo-mobile">
+    <div class="retangulo-curva-ajuda">
+      <img
+        src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Redes%20Sociais/Ret%C3%A2ngulo_Curva.png?raw=true">
+      <div class="retangulo1-ajuda">
+        <p class="texto1-ajuda">Sobre a Destiny Joias</p>
+        <p class="texto2-ajuda">NOSSAS REDES <span class="texto2-azul-ajuda">SOCIAIS</span></p>
+
+        <a href="https://www.whatsapp.com/" target="_blank" class="retangulo2-ajuda">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Redes%20Sociais/Icon_WhatsApp.png?raw=true">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" class="retangulo2-ajuda">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Redes%20Sociais/Icon_Instagram.png?raw=true">
+        </a>
+
+        <a href="https://twitter.com/" target="_blank" class="retangulo2-ajuda">
+          <img
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Mobile/Redes%20Sociais/Icon_X.png?raw=true">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Coleção Diamond -->
+
+  <div class="codigo-desktop">
+    <div class="container-produtos2-desktop">
+      <div class="textoandicon">
+        <h1 class="tituloprodutos2">Explore a Melhor Coleção de Joias Cravejadas do Brasil</h1>
+        <div class="image-icon1">
+          <img class="image-verificado"
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627"
+            alt="Imagem 1">
+          <span class="icones-texto">Qualidade</span>
+        </div>
+
+        <div class="image-icon1">
+          <img class="image-verificado"
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
+          <span class="icones-texto">Preço</span>
+        </div>
+
+        <div class="image-icon1">
+          <img class="image-verificado"
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
+          <span class="icones-texto">Frete Grátis</span>
+        </div>
+
+        <div class="image-icon1">
+          <img class="image-verificado"
+            src="https://cdn.shopify.com/s/files/1/0765/9008/8466/files/Icon_Verificado.png?v=1685575627">
+          <span class="icones-texto">Garantia</span>
+        </div>
+        <a href="#" class="btn-garantia">Veja Mais</a>
+      </div>
+      <div class="containericon1">
+        <a href="default.asp">
+          <div class="overlayicon1"></div>
+          <div class="textoicon1">CONHEÇA A COLEÇÃO DIAMOND</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ___________________________________________________________________________________ -->
+
+
+  <!-- Categorias da Coleção Diamond -->
+
+  <div class="codigo-desktop">
+    <div class="categorias2-container">
+      <div class="categorias2-card">
+        <img src="IMG/15.png" id="img1">
+        <div class="categorias2-card-text" id="text1">Anel Diamond</div>
+      </div>
+      <div class="categorias2-card">
+        <img src="IMG/16.png">
+        <div class="categorias2-card-text">Corrente Prong</div>
+      </div>
+      <div class="categorias2-card">
+        <img src="IMG/17.png">
+        <div class="categorias2-card-text">Corrente Cuban</div>
+      </div>
+      <div class="categorias2-card">
+        <img src="IMG/18.png">
+        <div class="categorias2-card-text">Pulseira 13mm</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Banner de Descontos -->
+
+<div class="codigo-desktop">
+  <div class="retangulo-banner2-desktop">
+    <span class="discount-text">20% DE DESCONTO</span>
+    <span class="discount-text2">EM TODO MÊS DE OUTUBRO</span>
+  </div>
+</div>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Beneficios da Destiny Joias -->
+
+<div class="codigo-desktop">
+  <h1 class="titulo-beneficios">
+    Motivos para <span class="verde-titulo-beneficios">Comprar</span> na Destiny Joias
+  </h1>
+
+  <ul class="card-list">
+
+    <li class="card-beneficios">
+      <div class="card-content">
+        <div class="card-icon-container">
+          <img class="card-icon1"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CaixaIcon.png?raw=true" alt="">
+        </div>
+        <p class="card-text">Frete grátis em todos os pedidos</p>
+      </div>
+    </li>
+
+    <li class="card-beneficios">
+      <div class="card-content">
+        <div class="card-icon-container">
+          <img class="card-icon2"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CarteiraIcon.png?raw=true" alt="">
+        </div>
+        <p class="card-text">Várias opções de parcelamento</p>
+      </div>
+    </li>
+
+    <li class="card-beneficios">
+      <div class="card-content">
+        <div class="card-icon-container">
+          <img class="card-icon3"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/CaminhaoIcon.png?raw=true" alt="">
+        </div>
+        <p class="card-text">Entrega rápida em todo Brasil</p>
+      </div>
+    </li>
+
+    <li class="card-beneficios">
+      <div class="card-content">
+        <div class="card-icon-container">
+          <img class="card-icon3"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/GarantiaIcon.png?raw=true" alt="">
+        </div>
+        <p class="card-text">Garantia de 7 dias para testar os produtos</p>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Avaliações dos Clientes -->
+
+<div class="codigo-desktop">
+  <div class="clientes1-pagecontainer">
+    <div class="clientes1-boxcontainer">
+      <div class="clientes1-rectangle">
+        <!-- Parte 1 do carrossel -->
+        <div class="carousel-part ativo">
+          <div class="clientes1-texto1">
+            AVALIAÇÃO DOS NOSSOS CLIENTES
+          </div>
+          <div class="clientes1-texto2">
+            Lucas Alves
+          </div>
+          <div class="clientes1-texto3">
+            Comprei esses produtos e estou impressionado! Os produtos são incriveís!
+          </div>
+          <img class="clientes1-imagem1" src="https://i.imgur.com/F52tDXB.png" alt="Imagem Adicional">
+          <div class="clientes1-texto4">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">
+              <span>VEJA ESSE PRODUTO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Parte 2 do carrossel -->
+        <div class="carousel-part">
+          <div class="clientes1-texto1">
+            AVALIAÇÃO DOS NOSSOS CLIENTES
+          </div>
+          <div class="clientes1-texto2">
+            Mateus Silva
+          </div>
+          <div class="clientes1-texto3">
+            Os produtos são de alta qualidade, o brilho suave adiciona um toque elegante. Excelente custo-benefício!
+          </div>
+          <img class="clientes1-imagem1" src="https://i.imgur.com/F52tDXB.png" alt="Imagem Adicional">
+          <div class="clientes1-texto4">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Relógios.html">
+              <span>VEJA ESSE PRODUTO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Parte 3 do carrossel -->
+        <div class="carousel-part">
+          <div class="clientes1-texto1">
+            AVALIAÇÃO DOS NOSSOS CLIENTES
+          </div>
+          <div class="clientes1-texto2">
+            Rodrigo Pereira
+          </div>
+          <div class="clientes1-texto3">
+            A qualidade dessa corrente e dessa pulseira são impressionantes!
+          </div>
+          <img class="clientes1-imagem1" src="https://i.imgur.com/F52tDXB.png" alt="Imagem Adicional">
+          <div class="clientes1-texto4">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Pulseiras.html">
+              <span>VEJA ESSE PRODUTO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Parte 4 do carrossel -->
+        <div class="carousel-part">
+          <div class="clientes1-texto1">
+            AVALIAÇÃO DOS NOSSOS CLIENTES
+          </div>
+          <div class="clientes1-texto2">
+            Nicole Silva
+          </div>
+          <div class="clientes1-texto3">
+            Eu estava em busca de uma corrente bonita e encontrei exatamente o que eu queria. Combina com qualquer roupa e ocasião!
+          </div>
+          <img class="clientes1-imagem1" src="https://i.imgur.com/F52tDXB.png" alt="Imagem Adicional">
+          <div class="clientes1-texto4">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Correntes.html">
+              <span>VEJA ESSE PRODUTO</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Parte 5 do carrossel -->
+        <div class="carousel-part">
+          <div class="clientes1-texto1">
+            AVALIAÇÃO DOS NOSSOS CLIENTES
+          </div>
+          <div class="clientes1-texto2">
+            Bruna Souza
+          </div>
+          <div class="clientes1-texto3">
+            Minhas novas pulseiras são maravilhosas! A qualidade é excepcional e o brilho é incrível!
+          </div>
+          <img class="clientes1-imagem1" src="https://i.imgur.com/F52tDXB.png" alt="Imagem Adicional">
+          <div class="clientes1-texto4">
+            <a href="https://leonardosantos123.github.io/website-destinyjoias/Pulseiras.html">
+              <span>VEJA ESSE PRODUTO</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="clientes1-imagem2-container">
+        <img id="carouselImage" class="clientes1-imagem2" src="" alt="">
+      </div>
+      <div class="carousel-controls">
+        <span id="moveLeft" class="carousel-control carousel-control-left">
+          <svg class="carousel-control-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+          </svg>
+        </span>
+        <span id="moveRight" class="carousel-control carousel-control-right">
+          <svg class="carousel-control-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Redes Sociais da Destiny Joias -->
+
+<div class=codigo-desktop>
+  <div class="retangulo-ajuda1-desktop">
+
+    <div class="texto1-ajuda1">Sobre a Destiny Joias</div>
+    <div class="texto2-ajuda1">NOSSAS <span class="blue-text">REDES SOCIAIS</span></div>
+
+    <div id="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Redes%20Sociais%20Desktop/Icon_WhatsApp.png?raw=true">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Redes%20Sociais%20Desktop/Icon_Instagram.png?raw=true">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <img
+              src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Redes%20Sociais%20Desktop/Icon_X.png?raw=true">
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Questões Sobre a Destiny Joias -->
+
+<div class="questoes-container">
+  <div class="questoes-titulo">Questões da Destiny Joias</div>
+  <div class="questoes">
+    <div class="questoes-item">
+      <button id="questoes-button-1" aria-expanded="false"><span class="questoes-title">Qual é a política de devolução da loja em caso de insatisfação com a joia recebida?</span><span
+          class="icon" aria-hidden="true"></span></button>
+      <div class="questoes-conteudo">
+        <div class="questoes-texto1">Oferecemos uma política de devolução flexível. Se não estiver satisfeito com sua compra, entre em contato conosco dentro de 10 dias para obter assistência e informações sobre o processo de devolução.</div>
+      </div>
+    </div>
+    <div class="questoes-item">
+      <button id="questoes-button-2" aria-expanded="false"><span class="questoes-title">Como são protegidas as informações de pagamento fornecidas durante a compra?</span><span
+          class="icon" aria-hidden="true"></span></button>
+      <div class="questoes-conteudo">
+        <div class="questoes-texto1">A sua segurança é a nossa prioridade. Utilizamos tecnologias de criptografia avançadas para proteger suas informações de pagamento, garantindo uma transação segura e confidencial.</div>
+      </div>
+    </div>
+    <div class="questoes-item">
+      <button id="questoes-button-3" aria-expanded="false"><span class="questoes-title">Como posso rastrear o status do meu pedido após a compra?</span><span
+          class="icon" aria-hidden="true"></span></button>
+      <div class="questoes-conteudo">
+        <div class="questoes-texto1">Todos os nossos produtos possuem códigos de rastreio que podem ser rastreados através do Site dos Correios.</div>
+      </div>
+    </div>
+    <div class="questoes-item">
+      <button id="questoes-button-4" aria-expanded="false"><span class="questoes-title">Quais são as opções de envio disponíveis e quanto tempo leva para receber meu pedido?</span><span
+          class="icon" aria-hidden="true"></span></button>
+      <div class="questoes-conteudo">
+        <div class="questoes-texto1">Dentro da nossa página de Checkout tem a possibilidade de os clientes escolherem entre as transporadoras: Correios, Jadlog e Total Express. Cada transportadora oferece um prazo de entrega.</div>
+      </div>
+    </div>
+    <div class="questoes-item">
+      <button id="questoes-button-5" aria-expanded="false"><span class="questoes-title">Como faço para entrar em contato com o suporte ao cliente em caso de dúvidas ou problemas?</span><span
+          class="icon" aria-hidden="true"></span></button>
+      <div class="questoes-conteudo">
+        <div class="questoes-texto1">O Suporte ao cliente é feito através do WhatsApp e Instagram da Loja.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ___________________________________________________________________________________ -->
+
+
+<!-- Footer da Destiny Joias -->
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="row">
+      <div class="footer-col top">
+        <h4>Destiny <span class="texto-azul-footer">Joias</span></h4>
+        <ul>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/P%C3%A1gina%20Inicial.png?raw=true"
+            widht="22" height="22">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/">Página Inicial</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Nossa%20Equipe.png?raw=true"
+            widht="22" height="22">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Equipe.html">Nossa Equipe</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Cole%C3%A7%C3%A3o%20Diamond.png?raw=true"
+            widht="22" height="22">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/ColeçãoDiamond.html">Coleção
+              Diamond</a></li>
+          <a></a>
+        </ul>
+      </div>
+      <div class="footer-ajuda">
+        <h4><span class="texto-azul-footer">Ajuda</span></h4>
+        <ul>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/WhatsApp.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://www.whatsapp.com/">11 99289-1553</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Email.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://www.google.com/intl/pt-BR/gmail/about/"
+              class="email-footer">contato@destinyjoias.com</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Footer/Rastrear%20Entrega.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://rastreamento.correios.com.br/app/index.php">Rastrear Entrega</a></li>
+          <a></a>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nossos <span class="texto-azul-footer">Produtos</span></h4>
+        <ul>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Pulseira.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Pulseiras.html">Pulseiras</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Corrente.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Correntes.html">Correntes</a></li>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Anel.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Anéis.html">Anéis</a></li>
+          <a></a>
+          <br>
+          <img class="icone-footer"
+            src="https://github.com/LeonardoSantos123/imagensdestinyjoias/blob/main/Header/Icon_Rel%C3%B3gio.png?raw=true"
+            widht="20" height="20">
+          <li><a href="https://leonardosantos123.github.io/website-destinyjoias/Produtos/Anéis.html">Relógios</a></li>
+          <a></a>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nossas <span class="texto-azul-footer">Redes Sociais</span></h4>
+        <div class="social-links">
+          <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/destinyjoias_/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-x-twitter"></i></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ___________________________________________________________________________________ -->
+
+<!-- Arquivos JavaScript do Site -->
+
+<script src="JS/Componentes.js"></script>
+<script src="JS/Carrinho.js"></script>
+<script src="JS/ChatBot.js"></script>
+<script src="JS/Banner1.js"></script>
+<script src="JS/Clientes1.js"></script>
+<script src="JS/Ajuda1.js"></script>
+<script src="JS/Questoes1.js"></script>
+<script src="JS/Header Mobile.js"></script>
+<script src="JS/Diamond.js"></script>
+<script src="JS/Tela de Carregamento.js"></script>
+<script src="JS/Clientes.js"></script>
+<script src="JS/Header Desktop.js"></script>
+
 </body>
 
 </html>
